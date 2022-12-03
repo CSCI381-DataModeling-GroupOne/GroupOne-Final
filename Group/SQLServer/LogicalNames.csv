@@ -1,0 +1,85 @@
+ERwin Property Ids,1075850516::User Formatted Name  [read only],0::Object Type  [read only],1073742244::Owner Path  [read only],1073742126::Name,1075849176::Physical Name
+1075838981::377,<default>,Attribute,Model_1.SalesCategoryThreshold,<default>,SalesCategoryThresholdID
+1075838981::325,CategoryDescription,Attribute,Model_1.SalesCategoryThreshold,Category Description,CategoryDescription
+1075838981::333,CategoryDescription,Attribute,Model_1.SalesOrderVehicle,Category Description,CategoryDescription
+1075838981::364,CheckConstraintRuleName,Attribute,Model_1.uvw_FindColumnDefinitionPlusDefaultAndCheckConstraint,Check Constraint Rule Name,
+1075838981::365,CheckConstraintRuleNameDefinition,Attribute,Model_1.uvw_FindColumnDefinitionPlusDefaultAndCheckConstraint,Check Constraint Rule Name Definition,
+1075838981::356,ColumnName,Attribute,Model_1.uvw_FindColumnDefinitionPlusDefaultAndCheckConstraint,Column Name,
+1075838981::304,Cost,Attribute,Model_1.ManufacturerVehicleStock,Cost    ,Cost
+1075838981::320,Country,Attribute,Model_1.MarketingInformation,Country ,Country
+1075838981::269,CountryISO2,Attribute,Model_1.Country,Country ISO2,CountryISO2
+1075838981::267,CountryISO3,Attribute,Model_1.Country,Country ISO3,CountryISO3
+1075838981::266,CountryId,Attribute,Model_1.Country,Country ID,CountryID
+1075838981::268,CountryName,Attribute,Model_1.Country,Country Name,CountryName
+1075838981::310,CusomerComments,Attribute,Model_1.ManufacturerVehicleStock,Cusomer Comments,CusomerComments
+1075838981::276,CustomerAddress1,Attribute,Model_1.Customer,Customer Address 1,CustomerAddress1
+1075838981::277,CustomerAddress2,Attribute,Model_1.Customer,Customer Address 2,CustomerAddress2
+1075838981::280,CustomerCountry,Attribute,Model_1.Customer,Customer Country,CustomerCountry
+1075838981::274,CustomerId,Attribute,Model_1.Customer,Customer ID,CustomerID
+1075838981::318,CustomerId,Attribute,Model_1.MarketingInformation,Customer ID,CustomerID
+1075838981::328,CustomerId,Attribute,Model_1.SalesOrderVehicle,Customer ID,CustomerID
+1075838981::275,CustomerName,Attribute,Model_1.Customer,Customer Name,CustomerName
+1075838981::319,CustomerName,Attribute,Model_1.MarketingInformation,Customer Name,CustomerName
+1075838981::279,CustomerPostalCode,Attribute,Model_1.Customer,Customer Postal Code,CustomerPostalCode
+1075838981::283,CustomerSpendCapacityId,Attribute,Model_1.Customer,Customer Spend Capacity ID,CustomerSpendCapacityID
+1075838981::278,CustomerTown,Attribute,Model_1.Customer,Customer Town,CustomerTown
+1075838981::360,DataType,Attribute,Model_1.uvw_FindColumnDefinitionPlusDefaultAndCheckConstraint,Data Type,
+1075838981::362,DefaultName,Attribute,Model_1.uvw_FindColumnDefinitionPlusDefaultAndCheckConstraint,Default Name,
+1075838981::363,DefaultNameDefinition,Attribute,Model_1.uvw_FindColumnDefinitionPlusDefaultAndCheckConstraint,Default Name Definition,
+1075838981::307,DeliveryCharge,Attribute,Model_1.ManufacturerVehicleStock,Delivery Charge,DeliveryCharge
+1075838981::349,Department,Attribute,Model_1.Staff,Department,Department
+1075838981::342,DerivedDiscountedSalePrice,Attribute,Model_1.SalesOrderVehicleDetail,Derived Discounted Sale Price,DerivedDiscountedSalePrice
+1075838981::359,DomainName,Attribute,Model_1.uvw_FindColumnDefinitionPlusDefaultAndCheckConstraint,Domain Name,
+1075838981::358,FullyQualifiedDomainName,Attribute,Model_1.uvw_FindColumnDefinitionPlusDefaultAndCheckConstraint,Fully Qualified Domain Name,
+1075838981::353,FullyQualifiedTableName,Attribute,Model_1.uvw_FindColumnDefinitionPlusDefaultAndCheckConstraint,Fully Qualified Table Name,
+1075838981::330,InvoiceNumber,Attribute,Model_1.SalesOrderVehicle,Invoice Number   ,InvoiceNumber
+1075838981::282,IsCustomerCreditRisk,Attribute,Model_1.Customer,Is Customer Credit Risk,IsCustomerCreditRisk
+1075838981::281,IsCustomerReseller,Attribute,Model_1.Customer,Is Customer Reseller,IsCustomerReseller
+1075838981::260,IsDeleted,Attribute,Model_1.CommonColumnsForTriggerTemplate,Is Deleted,IsDeleted
+1075838981::361,IsNullable,Attribute,Model_1.uvw_FindColumnDefinitionPlusDefaultAndCheckConstraint,Is Nullable,
+1075838981::308,IsPremiumRoadHandlingPackage,Attribute,Model_1.ManufacturerVehicleStock,Is Premium Road Handling Package,IsPremiumRoadHandlingPackage
+1075838981::341,LineItemDiscount,Attribute,Model_1.SalesOrderVehicleDetail,Line Item Discount,LineItemDiscount
+1075838981::337,LineItemNumber,Attribute,Model_1.SalesOrderVehicleDetail,Line Item Number,LineItemNumber
+1075838981::323,LowerThreshold,Attribute,Model_1.SalesCategoryThreshold,Lower Threshold,LowerThreshold
+1075838981::315,MakeName,Attribute,Model_1.MarketingCategory,Make Name,MakeName
+1075838981::348,ManagerID,Attribute,Model_1.Staff,Manager ID,ManagerID
+1075838981::287,ManufacturerModelId,Attribute,Model_1.ManufacturerModel,Manufacturer Model ID,ManufacturerModelID
+1075838981::288,ManufacturerModelName,Attribute,Model_1.ManufacturerModel,Manufacturer Model Name,ManufacturerModelName
+1075838981::289,ManufacturerModelVariant,Attribute,Model_1.ManufacturerModel,Manufacturer Model Variant,ManufacturerModelVariant
+1075838981::295,ManufacturerVehicleMakeCountry,Attribute,Model_1.ManufacturerVehicleMake,Manufacturer Vehicle Make Country,ManufacturerVehicleMakeCountry
+1075838981::293,ManufacturerVehicleMakeId,Attribute,Model_1.ManufacturerVehicleMake,Manufacturer Vehicle Make ID,ManufacturerVehicleMakeID
+1075838981::294,ManufacturerVehicleMakeName,Attribute,Model_1.ManufacturerVehicleMake,Manufacturer Vehicle Make Name,ManufacturerVehicleMakeName
+1075838981::300,ManufacturerVehicleStockId,Attribute,Model_1.ManufacturerVehicleStock,Manufacturer Vehicle Stock ID,ManufacturerVehicleStockID
+1075838981::316,MarketingType,Attribute,Model_1.MarketingCategory,Marketing Type        ,MarketingType
+1075838981::296,MarketingTypeId,Attribute,Model_1.ManufacturerVehicleMake,Marketing Type ID,MarketingTypeID
+1075838981::303,ModelID,Attribute,Model_1.ManufacturerVehicleStock,Model ID,ModelID
+1075838981::259,Note,Attribute,Model_1.CommonColumnsForTriggerTemplate,Note,Note
+1075838981::375,Number,Attribute,Model_1.MarketingCategory,Number,MarketingCategoryID
+1075838981::357,OrdinalPosition,Attribute,Model_1.uvw_FindColumnDefinitionPlusDefaultAndCheckConstraint,Ordinal Position,
+1075838981::306,PartsCharge,Attribute,Model_1.ManufacturerVehicleStock,Parts Charge,PartsCharge
+1075838981::311,PurchaseDate,Attribute,Model_1.ManufacturerVehicleStock,Purchase Date,PurchaseDate
+1075838981::305,RepairsCharge,Attribute,Model_1.ManufacturerVehicleStock,Repairs Charge,RepairsCharge
+1075838981::258,RowLevelHashKey,Attribute,Model_1.CommonColumnsForTriggerTemplate,Row Level Hash Key,RowLevelHashKey
+1075838981::332,SaleDate,Attribute,Model_1.SalesOrderVehicle,Sale Date,SaleDate
+1075838981::340,SalePrice,Attribute,Model_1.SalesOrderVehicleDetail,Sale Price,SalePrice
+1075838981::335,SalesOrderVehicleDetailId,Attribute,Model_1.SalesOrderVehicleDetail,Sales Order Vehicle Detail ID,SalesOrderVehicleDetailID
+1075838981::327,SalesOrderVehicleId,Attribute,Model_1.SalesOrderVehicle,Sales Order Vehicle ID,SalesOrderVehicleID
+1075838981::336,SalesOrderVehicleId,Attribute,Model_1.SalesOrderVehicleDetail,Sales Order Vehicle ID,SalesOrderVehicleID
+1075838981::270,SalesRegion,Attribute,Model_1.Country,Sales Region,SalesRegion
+1075838981::354,SchemaName,Attribute,Model_1.uvw_FindColumnDefinitionPlusDefaultAndCheckConstraint,Schema Name,
+1075838981::321,SpendCapacity,Attribute,Model_1.MarketingInformation,Spend Capacity,SpendCapacity
+1075838981::329,StaffId,Attribute,Model_1.SalesOrderVehicle,Staff ID,StaffID
+1075838981::346,StaffId,Attribute,Model_1.Staff,Staff ID,StaffID
+1075838981::347,StaffName,Attribute,Model_1.Staff,Staff Name,StaffName
+1075838981::302,StockCode,Attribute,Model_1.ManufacturerVehicleStock,Stock Code,StockCode
+1075838981::339,StockCode,Attribute,Model_1.SalesOrderVehicleDetail,Stock Code,StockCode
+1075838981::301,StockId,Attribute,Model_1.ManufacturerVehicleStock,Stock ID,StockID
+1075838981::338,StockId,Attribute,Model_1.SalesOrderVehicleDetail,Stock ID,StockID
+1075838981::264,SysEndTime,Attribute,Model_1.CommonColumnsForTriggerTemplate,Sys End Time,SysEndTime
+1075838981::263,SysStartTime,Attribute,Model_1.CommonColumnsForTriggerTemplate,Sys Start Time,SysStartTime
+1075838981::355,TableName,Attribute,Model_1.uvw_FindColumnDefinitionPlusDefaultAndCheckConstraint,Table Name,
+1075838981::331,TotalSalePrice,Attribute,Model_1.SalesOrderVehicle,Total Sale Price,TotalSalePrice
+1075838981::261,TransactionNumber,Attribute,Model_1.CommonColumnsForTriggerTemplate,Transaction Number,TransactionNumber
+1075838981::324,UpperThreshold,Attribute,Model_1.SalesCategoryThreshold,Upper Threshold,UpperThreshold
+1075838981::262,UserAuthenticatedKey,Attribute,Model_1.CommonColumnsForTriggerTemplate,User Authenticated Key,UserAuthenticatedKey
+1075838981::309,VehicleColor,Attribute,Model_1.ManufacturerVehicleStock,Vehicle Color,VehicleColor
