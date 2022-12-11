@@ -1,0 +1,68 @@
+ERwin Property Ids,1075850516::User Formatted Name  [read only],0::Object Type  [read only],1073742126::Name,1075849201::Logical Data Type,1075849176::Physical Name,1075849056::Physical Data Type,1075850737::Schema
+1075838983::681,sdVehicleSalePayment,Domain,SubDomain Vehicle Sale Payment,CHAR(18),sdVehicleSalePayment,"numeric(18,2)",dNumber
+1075838983::705,sdVehicleDescriptonString,Domain,SubDomain Vehicle String,CHAR(18),sdVehicleString,nvarchar(50),dString
+1075838983::716,sdSysTime,Domain,SubDomain Sys Time,CHAR(18),sdSysTime,datetime(2),dDateTime
+1075838983::698,sdShortTextString,Domain,SubDomain Short Text String,CHAR(18),sdShortTextString,nvarchar(50),dString
+1075838983::674,sdSequenceNumber,Domain,SubDomain Sequence Number,CHAR(18),sdSequenceNumber,integer,dNumber
+1075838983::693,sdLongTextString,Domain,SubDomain Long Text String,CHAR(18),sdLongTextString,nvarchar(200),dString
+1075838983::691,sdHashKey,Domain,SubDomain Hash Key,CHAR(18),sdHashKey,varbinary(max),dBlob
+1075838983::694,sdFlagString,Domain,SubDomain Flag String,CHAR(18),sdFlagString,nvarchar(20),dString
+1075838983::839,sdFlagBit,Domain,SubDomain Flag Bit,CHAR(18),sdFlagBit,bit,dNumber
+1075838983::688,sdDate,Domain,SubDomain Date,CHAR(18),sdDate,date,dDateTime
+1075838983::1409,sdCustomerString,Domain,SubDomain Customer String,CHAR(18),sdCustomerString,nvarchar(20),dString
+1075838983::947,sdCountryStringVariants,Domain,SubDomain Country String Variants,CHAR(18),sdCountryStringVariants,nchar(3),dString
+1075838983::1021,sdBusinessComponentsString,Domain,SubDomain Business Components String,CHAR(18),sdBusinessComponentsString,nvarchar(50),dString
+1075838983::860,sdAddressesString,Domain,SubDomain Addresses String,CHAR(18),sdAddressesString,nvarchar(20),dString
+1075838983::1333,sd Time String,Domain,SubDomain Time String,CHAR(18),sdTimeString,nvarchar(20),dString
+1075838983::1335,sd Project String,Domain,SubDomain Project String,CHAR(18),sdProjectString,nvarchar(50),dString
+1075838983::1331,sd Person Name String,Domain,SubDomain Person Name String,CHAR(18),sdPersonNameString,nvarchar(20),dString
+1075838983::673,dString,Domain,Domain String,CHAR(18),dString,nvarchar(20),dEuropeanCarDealership
+1075838983::666,dRawEuropeanCarManufacturer,Domain,Domain European Car Dealership,CHAR(18),dEuropeanCarDealership,char(18),dEuropeanCarDealership
+1075838983::669,dNumber,Domain,Domain Number,CHAR(18),dNumber,integer,dEuropeanCarDealership
+1075838983::671,dDatetime,Domain,Domain Datetime,CHAR(18),dDatetime,datetime,dEuropeanCarDealership
+1075838983::667,dBlob,Domain,Domain Blob,CHAR(18),dBlob,varbinary(max),dEuropeanCarDealership
+1075838983::682,VehiclePrice,Domain,Vehicle Price,CHAR(18),VehiclePrice,"numeric(18,2)",sdVehicleSalePayment
+1075838983::708,VehicleNomenclature,Domain,Vehicle Identifier,CHAR(18),VehicleIdentifier,nvarchar(150),sdVehicleDescriptorString
+1075838983::1429,VehicleManufacturerMarketingType,Domain,Vehicle Manufacturer Marketing Type,CHAR(18),VehicleManufacturerMarketingType,nvarchar(50),sdVehicleDescriptorString
+1075838983::712,VehicleColor,Domain,Vehicle Color,CHAR(18),VehicleColor,nvarchar(50),sdVehicleDescriptorString
+1075838983::678,TransactionNumber,Domain,Transaction Number,CHAR(18),TransactionNumber,smallint,sdOrdinalNumber
+1075838983::864,TownString,Domain,Town String,CHAR(18),TownString,nvarchar(20),sdAddressesString
+1075838983::717,SysStartTime,Domain,Sys Start Time,CHAR(18),SysStartTime,datetime(2),sdSysTime
+1075838983::718,SysEndTime,Domain,Sys End Time,CHAR(18),SysEndTime,datetime(2),sdSysTime
+1075838983::676,SurrogateKeyNumber,Domain,Surrogate Key Number,CHAR(18),SurrogateKeyNumber,integer,sdSequenceNumber
+1075838983::34,String,Domain,String,VARCHAR(20),String,varchar(20),
+1075838983::699,StockCode,Domain,Stock Code,CHAR(18),StockCode,nvarchar(50),sdShortTextString
+1075838983::689,SaleDate,Domain,Sale Date,CHAR(18),SaleDate,date,sdDate
+1075838983::692,RowLevelKey,Domain,Row Level Key,CHAR(18),RowLevelKey,varbinary(32),sdHashKey
+1075838983::954,RegionString,Domain,Region String,CHAR(18),RegionString,nvarchar(20),sdAddressesString
+1075838983::690,PurchaseDate,Domain,Purchase Date,CHAR(18),PurchaseDate,date,sdDate
+1075838983::863,PostalCodeString,Domain,Postal Code String,CHAR(18),PostalCodeString,nvarchar(20),sdAddressesString
+1075838983::852,PersonName,Domain,Customer Name,CHAR(18),CustomerName,nvarchar(20),sdNameString
+1075838983::35,Number,Domain,Number,INTEGER,Number,integer,
+1075838983::695,Note,Domain,Note,CHAR(18),Note,nvarchar(200),sdLongTextString
+1075838983::856,MarketingDescriptor,Domain,Customer Spend Capacity,CHAR(18),CustomerSpendCapacity,nvarchar(20),sdMarketingTextString
+1075838983::686,LineItemNumber,Domain,Line Item Number,CHAR(18),LineItemNumber,smallint,sdSequenceNumber
+1075838983::1347,Last Name String,Domain,Last Name String,CHAR(18),LastNameString,nvarchar(20),sdPersonNameString
+1075838983::700,InvoiceNumber,Domain,Invoice Number,CHAR(18),InvoiceNumber,nchar(8),sdShortTextString
+1075838983::1336,GrouplProject Name String,Domain,Groupl Project Name String,CHAR(18),GrouplProjectNameString,nvarchar(50),sdProjectString
+1075838983::1417,FullNameString,Domain,Full Name String,CHAR(18),FullNameString,nvarchar(20),sdPersonNameString
+1075838983::842,FlagFalse,Domain,Flag False,CHAR(18),FlagFalse,bit,sdFlagBit
+1075838983::1346,First Name String,Domain,First Name String,CHAR(18),FirstNameString,nvarchar(50),sdPersonNameString
+1075838983::1265,Domain_1265,Domain,Vehicle Sales Threshold Category,CHAR(18),VehicleSalesThresholdCategory,nvarchar(50),sdMarketingTextString
+1075838983::1245,Domain_1245,Domain,Customer Comments,CHAR(18),CustomerComments,nvarchar(200),sdLongTextString
+1075838983::1133,Domain_1133,Domain,SubDomain Ordinal Number,CHAR(18),sdOrdinalNumber,smallint,dNumber
+1075838983::1022,Domain_1022,Domain,Department String,CHAR(18),DepartmentString,nvarchar(50),sdBusinessComponentString
+1075838983::685,DiscountedPrice,Domain,Discounted Price,CHAR(18),DiscountedPrice,"numeric(18,2)",sdVehicleSalePayment
+1075838983::36,Datetime,Domain,Datetime,DATE,Datetime,datetime,
+1075838983::1329,DateAdded,Domain,Date Added,CHAR(18),DateAdded,datetime(2),sdDatetime2Precision7
+1075838983::1345,Date Of Last Update,Domain,Date Of Last Update,CHAR(18),DateOfLastUpdate,datetime(2),sdDatetime2Precision7
+1075838983::951,CountryString,Domain,Country String,CHAR(18),CountryString,nvarchar(150),sdAddressesString
+1075838983::950,CountryISO3,Domain,Country ISO3,CHAR(18),CountryISO3,nchar(3),sdCountryStringVariants
+1075838983::948,CountryISO2,Domain,Country ISO2,CHAR(18),CountryISO2,nchar(2),sdCountryStringVariants
+1075838983::687,CostOfFee,Domain,Cost Of Fee,CHAR(18),CostOfFee,"numeric(18,2)",sdVehicleSalePayment
+1075838983::1334,Class Time String,Domain,Class Time String,CHAR(18),ClassTimeString,nvarchar(20),sdTimeString
+1075838983::37,Blob,Domain,Blob,LARGE BINARY,Blob,varbinary,
+1075838983::719,AuditFlag,Domain,Audit Flag,CHAR(18),AuditFlag,nvarchar(20),sdFlagString
+1075838983::861,AddressString,Domain,Address String,CHAR(18),AddressString,nvarchar(150),sdAddressesString
+1075838983::32,<root>,Domain,<root>,CHAR(18),_root_,,
+1075838983::33,<default>,Domain,<default>,CHAR(18),_default_,char(18),
