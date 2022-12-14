@@ -1,0 +1,14 @@
+ERwin Property Ids,1075850516::User Formatted Name  [read only],0::Object Type  [read only],1073742244::Owner Path  [read only],1073742125::Definition
+1075838979::216,Country,Entity,GroupOne-RawEuropeanCarManufacturer-SQLServer2019,A Country is the location in which a Customer resides in or a location in which a Vehicle is manufactured or sold.
+1075838979::219,Customer,Entity,GroupOne-RawEuropeanCarManufacturer-SQLServer2019,A Customer is a person who purchases a vehicle
+1075838979::222,Manufacturer Vehicle Model,Entity,GroupOne-RawEuropeanCarManufacturer-SQLServer2019,Manufacturer Vehicle Model describes the models offered by a vehicle Manufacturer.
+1075838979::225,Manufacturer Vehicle Make,Entity,GroupOne-RawEuropeanCarManufacturer-SQLServer2019,Manufacturer Vehicle Make identifies the Brand/Company responsible for Manufacturing the Vehicle.
+1075838979::228,Manufacturer Vehicle Stock,Entity,GroupOne-RawEuropeanCarManufacturer-SQLServer2019,Manufacturer Vehicle Stock describes the inventory of vehicles available based on the vehicle model.
+1075838979::234,Customer Expenditure Classification,Entity,GroupOne-RawEuropeanCarManufacturer-SQLServer2019,Marketing information is used to perform research and analytics on customer sales.
+1075838979::237,Sales Category Threshold,Entity,GroupOne-RawEuropeanCarManufacturer-SQLServer2019,Sales Category Threshold is a classifier that differentiates vehicles based on price.
+1075838979::240,Sales Order Vehicle,Entity,GroupOne-RawEuropeanCarManufacturer-SQLServer2019,Sales Order Vehicle is a record pertaining to vehicle sales.
+1075838979::243,Sales Order Vehicle Detail,Entity,GroupOne-RawEuropeanCarManufacturer-SQLServer2019,Sales Order Vehicle is a record pertaining to vehicle sales and more?
+1075838979::246,Staff,Entity,GroupOne-RawEuropeanCarManufacturer-SQLServer2019,How to use HierarchyID data type in SQL Server 2019 using real world example : https://www.youtube.com/watch?v=pQ4I89dDvLU
+1075838979::1015,Department,Entity,GroupOne-RawEuropeanCarManufacturer-SQLServer2019,
+1075838979::1337,User Authorization,Entity,GroupOne-RawEuropeanCarManufacturer-SQLServer2019,
+1075838979::1421,Manufacturer Marketing Category,Entity,GroupOne-RawEuropeanCarManufacturer-SQLServer2019,Manufacturer Marketing Category provides analytics on vehicles based on their respective class/type.

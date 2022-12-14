@@ -1,0 +1,14 @@
+ERwin Property Ids,1075850516::User Formatted Name  [read only],0::Object Type  [read only],1073742244::Owner Path  [read only],1073742125::Definition
+1075838979::131,Country,Entity,GroupOne-RawEuropeanCarManufacturer-PostgreSQL,A Country is the location in which a Customer resides in or a location in which a Vehicle is manufactured or sold.
+1075838979::134,Customer,Entity,GroupOne-RawEuropeanCarManufacturer-PostgreSQL,A Customer is a person who purchases a vehicle
+1075838979::137,Manufacturer Vehicle Model,Entity,GroupOne-RawEuropeanCarManufacturer-PostgreSQL,Manufacturer Vehicle Model describes the models offered by a vehicle Manufacturer.
+1075838979::140,Manufacturer Vehicle Make,Entity,GroupOne-RawEuropeanCarManufacturer-PostgreSQL,Manufacturer Vehicle Make identifies the Brand/Company responsible for Manufacturing the Vehicle.
+1075838979::143,Manufacturer Vehicle Stock,Entity,GroupOne-RawEuropeanCarManufacturer-PostgreSQL,Manufacturer Vehicle Stock describes the inventory of vehicles available based on the vehicle model.
+1075838979::146,Customer Expenditure Classification,Entity,GroupOne-RawEuropeanCarManufacturer-PostgreSQL,Marketing information is used to perform research and analytics on customer sales.
+1075838979::149,Sales Category Threshold,Entity,GroupOne-RawEuropeanCarManufacturer-PostgreSQL,Sales Category Threshold is a classifier that differentiates vehicles based on price.
+1075838979::152,Sales Order Vehicle,Entity,GroupOne-RawEuropeanCarManufacturer-PostgreSQL,Sales Order Vehicle is a record pertaining to vehicle sales.
+1075838979::155,Sales Order Vehicle Detail,Entity,GroupOne-RawEuropeanCarManufacturer-PostgreSQL,Sales Order Vehicle is a record pertaining to vehicle sales and more?
+1075838979::158,Staff,Entity,GroupOne-RawEuropeanCarManufacturer-PostgreSQL,How to use HierarchyID data type in SQL Server 2019 using real world example : https://www.youtube.com/watch?v=pQ4I89dDvLU
+1075838979::394,Department,Entity,GroupOne-RawEuropeanCarManufacturer-PostgreSQL,
+1075838979::472,User Authorization,Entity,GroupOne-RawEuropeanCarManufacturer-PostgreSQL,
+1075838979::515,Manufacturer Marketing Category,Entity,GroupOne-RawEuropeanCarManufacturer-PostgreSQL,Manufacturer Marketing Category provides analytics on vehicles based on their respective class/type.
