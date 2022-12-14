@@ -1,68 +1,72 @@
-ERwin Property Ids,1075850516::User Formatted Name  [read only],0::Object Type  [read only],1073742126::Name,1075849201::Logical Data Type,1075849176::Physical Name,1075849056::Physical Data Type,1075850737::Schema
-1075838983::681,sdVehicleSalePayment,Domain,SubDomain Vehicle Sale Payment,CHAR(18),sdVehicleSalePayment,"numeric(18,2)",dNumber
-1075838983::705,sdVehicleDescriptonString,Domain,SubDomain Vehicle String,CHAR(18),sdVehicleString,nvarchar(50),dString
-1075838983::716,sdSysTime,Domain,SubDomain Sys Time,CHAR(18),sdSysTime,datetime(2),dDateTime
-1075838983::698,sdShortTextString,Domain,SubDomain Short Text String,CHAR(18),sdShortTextString,nvarchar(50),dString
-1075838983::674,sdSequenceNumber,Domain,SubDomain Sequence Number,CHAR(18),sdSequenceNumber,integer,dNumber
-1075838983::693,sdLongTextString,Domain,SubDomain Long Text String,CHAR(18),sdLongTextString,nvarchar(200),dString
-1075838983::691,sdHashKey,Domain,SubDomain Hash Key,CHAR(18),sdHashKey,varbinary(max),dBlob
-1075838983::694,sdFlagString,Domain,SubDomain Flag String,CHAR(18),sdFlagString,nvarchar(20),dString
-1075838983::839,sdFlagBit,Domain,SubDomain Flag Bit,CHAR(18),sdFlagBit,bit,dNumber
-1075838983::688,sdDate,Domain,SubDomain Date,CHAR(18),sdDate,date,dDateTime
-1075838983::1409,sdCustomerString,Domain,SubDomain Customer String,CHAR(18),sdCustomerString,nvarchar(20),dString
-1075838983::947,sdCountryStringVariants,Domain,SubDomain Country String Variants,CHAR(18),sdCountryStringVariants,nchar(3),dString
-1075838983::1021,sdBusinessComponentsString,Domain,SubDomain Business Components String,CHAR(18),sdBusinessComponentsString,nvarchar(50),dString
-1075838983::860,sdAddressesString,Domain,SubDomain Addresses String,CHAR(18),sdAddressesString,nvarchar(20),dString
-1075838983::1333,sd Time String,Domain,SubDomain Time String,CHAR(18),sdTimeString,nvarchar(20),dString
-1075838983::1335,sd Project String,Domain,SubDomain Project String,CHAR(18),sdProjectString,nvarchar(50),dString
-1075838983::1331,sd Person Name String,Domain,SubDomain Person Name String,CHAR(18),sdPersonNameString,nvarchar(20),dString
-1075838983::673,dString,Domain,Domain String,CHAR(18),dString,nvarchar(20),dEuropeanCarDealership
-1075838983::666,dRawEuropeanCarManufacturer,Domain,Domain European Car Dealership,CHAR(18),dEuropeanCarDealership,char(18),dEuropeanCarDealership
-1075838983::669,dNumber,Domain,Domain Number,CHAR(18),dNumber,integer,dEuropeanCarDealership
-1075838983::671,dDatetime,Domain,Domain Datetime,CHAR(18),dDatetime,datetime,dEuropeanCarDealership
-1075838983::667,dBlob,Domain,Domain Blob,CHAR(18),dBlob,varbinary(max),dEuropeanCarDealership
-1075838983::682,VehiclePrice,Domain,Vehicle Price,CHAR(18),VehiclePrice,"numeric(18,2)",sdVehicleSalePayment
-1075838983::708,VehicleNomenclature,Domain,Vehicle Identifier,CHAR(18),VehicleIdentifier,nvarchar(150),sdVehicleDescriptorString
-1075838983::1429,VehicleManufacturerMarketingType,Domain,Vehicle Manufacturer Marketing Type,CHAR(18),VehicleManufacturerMarketingType,nvarchar(50),sdVehicleDescriptorString
-1075838983::712,VehicleColor,Domain,Vehicle Color,CHAR(18),VehicleColor,nvarchar(50),sdVehicleDescriptorString
-1075838983::678,TransactionNumber,Domain,Transaction Number,CHAR(18),TransactionNumber,smallint,sdOrdinalNumber
-1075838983::864,TownString,Domain,Town String,CHAR(18),TownString,nvarchar(20),sdAddressesString
-1075838983::717,SysStartTime,Domain,Sys Start Time,CHAR(18),SysStartTime,datetime(2),sdSysTime
-1075838983::718,SysEndTime,Domain,Sys End Time,CHAR(18),SysEndTime,datetime(2),sdSysTime
-1075838983::676,SurrogateKeyNumber,Domain,Surrogate Key Number,CHAR(18),SurrogateKeyNumber,integer,sdSequenceNumber
-1075838983::34,String,Domain,String,VARCHAR(20),String,varchar(20),
-1075838983::699,StockCode,Domain,Stock Code,CHAR(18),StockCode,nvarchar(50),sdShortTextString
-1075838983::689,SaleDate,Domain,Sale Date,CHAR(18),SaleDate,date,sdDate
-1075838983::692,RowLevelKey,Domain,Row Level Key,CHAR(18),RowLevelKey,varbinary(32),sdHashKey
-1075838983::954,RegionString,Domain,Region String,CHAR(18),RegionString,nvarchar(20),sdAddressesString
-1075838983::690,PurchaseDate,Domain,Purchase Date,CHAR(18),PurchaseDate,date,sdDate
-1075838983::863,PostalCodeString,Domain,Postal Code String,CHAR(18),PostalCodeString,nvarchar(20),sdAddressesString
-1075838983::852,PersonName,Domain,Customer Name,CHAR(18),CustomerName,nvarchar(20),sdNameString
-1075838983::35,Number,Domain,Number,INTEGER,Number,integer,
-1075838983::695,Note,Domain,Note,CHAR(18),Note,nvarchar(200),sdLongTextString
-1075838983::856,MarketingDescriptor,Domain,Customer Spend Capacity,CHAR(18),CustomerSpendCapacity,nvarchar(20),sdMarketingTextString
-1075838983::686,LineItemNumber,Domain,Line Item Number,CHAR(18),LineItemNumber,smallint,sdSequenceNumber
-1075838983::1347,Last Name String,Domain,Last Name String,CHAR(18),LastNameString,nvarchar(20),sdPersonNameString
-1075838983::700,InvoiceNumber,Domain,Invoice Number,CHAR(18),InvoiceNumber,nchar(8),sdShortTextString
-1075838983::1336,GrouplProject Name String,Domain,Groupl Project Name String,CHAR(18),GrouplProjectNameString,nvarchar(50),sdProjectString
-1075838983::1417,FullNameString,Domain,Full Name String,CHAR(18),FullNameString,nvarchar(20),sdPersonNameString
-1075838983::842,FlagFalse,Domain,Flag False,CHAR(18),FlagFalse,bit,sdFlagBit
-1075838983::1346,First Name String,Domain,First Name String,CHAR(18),FirstNameString,nvarchar(50),sdPersonNameString
-1075838983::1265,Domain_1265,Domain,Vehicle Sales Threshold Category,CHAR(18),VehicleSalesThresholdCategory,nvarchar(50),sdMarketingTextString
-1075838983::1245,Domain_1245,Domain,Customer Comments,CHAR(18),CustomerComments,nvarchar(200),sdLongTextString
-1075838983::1133,Domain_1133,Domain,SubDomain Ordinal Number,CHAR(18),sdOrdinalNumber,smallint,dNumber
-1075838983::1022,Domain_1022,Domain,Department String,CHAR(18),DepartmentString,nvarchar(50),sdBusinessComponentString
-1075838983::685,DiscountedPrice,Domain,Discounted Price,CHAR(18),DiscountedPrice,"numeric(18,2)",sdVehicleSalePayment
-1075838983::36,Datetime,Domain,Datetime,DATE,Datetime,datetime,
-1075838983::1329,DateAdded,Domain,Date Added,CHAR(18),DateAdded,datetime(2),sdDatetime2Precision7
-1075838983::1345,Date Of Last Update,Domain,Date Of Last Update,CHAR(18),DateOfLastUpdate,datetime(2),sdDatetime2Precision7
-1075838983::951,CountryString,Domain,Country String,CHAR(18),CountryString,nvarchar(150),sdAddressesString
-1075838983::950,CountryISO3,Domain,Country ISO3,CHAR(18),CountryISO3,nchar(3),sdCountryStringVariants
-1075838983::948,CountryISO2,Domain,Country ISO2,CHAR(18),CountryISO2,nchar(2),sdCountryStringVariants
-1075838983::687,CostOfFee,Domain,Cost Of Fee,CHAR(18),CostOfFee,"numeric(18,2)",sdVehicleSalePayment
-1075838983::1334,Class Time String,Domain,Class Time String,CHAR(18),ClassTimeString,nvarchar(20),sdTimeString
-1075838983::37,Blob,Domain,Blob,LARGE BINARY,Blob,varbinary,
-1075838983::719,AuditFlag,Domain,Audit Flag,CHAR(18),AuditFlag,nvarchar(20),sdFlagString
-1075838983::861,AddressString,Domain,Address String,CHAR(18),AddressString,nvarchar(150),sdAddressesString
-1075838983::32,<root>,Domain,<root>,CHAR(18),_root_,,
-1075838983::33,<default>,Domain,<default>,CHAR(18),_default_,char(18),
+ERwin Property Ids,1075850516::User Formatted Name  [read only],0::Object Type  [read only],1073742244::Owner Path  [read only],1073742125::Definition,1073742126::Name,1075850008::Update Attribute Definition to Match,1075850303::Attribute Definition
+1075838983::32,<root>,Domain,GroupOne-RawEuropeanCarManufacturer-SQLServer2019,,<root>,,
+1075838983::33,<default>,Domain,GroupOne-RawEuropeanCarManufacturer-SQLServer2019,,<default>,,
+1075838983::34,String,Domain,GroupOne-RawEuropeanCarManufacturer-SQLServer2019,,String,,
+1075838983::35,Number,Domain,GroupOne-RawEuropeanCarManufacturer-SQLServer2019,,Number,,
+1075838983::36,Datetime,Domain,GroupOne-RawEuropeanCarManufacturer-SQLServer2019,,Datetime,,
+1075838983::37,Blob,Domain,GroupOne-RawEuropeanCarManufacturer-SQLServer2019,,Blob,,
+1075838983::362,dEuropeanCarManufacturer,Domain,GroupOne-RawEuropeanCarManufacturer-SQLServer2019,root Domain for domains within the European Car Manufacturer,dEuropeanCarManufacturer,,root Domain for domains within the European Car Manufacturer
+1075838983::363,dBlob,Domain,GroupOne-RawEuropeanCarManufacturer-SQLServer2019,Domain that pertains to large files.,dBlob,,Domain that pertains to large files.
+1075838983::364,dNumber,Domain,GroupOne-RawEuropeanCarManufacturer-SQLServer2019,Domain for numerical data types.,dNumber,,Domain for numerical data types.
+1075838983::365,dDatetime,Domain,GroupOne-RawEuropeanCarManufacturer-SQLServer2019,Domain for date and time data types.,dDatetime,,Domain for date and time data types.
+1075838983::366,dString,Domain,GroupOne-RawEuropeanCarManufacturer-SQLServer2019,Domain for character data types.,dString,,Domain for character data types.
+1075838983::367,sdSequenceNumber,Domain,GroupOne-RawEuropeanCarManufacturer-SQLServer2019,Numerical object to categorize vehicles based on their sale price.,sdSequenceNumber,,Numerical object to categorize vehicles based on their sale price.
+1075838983::368,SurrogateKeyNumber,Domain,GroupOne-RawEuropeanCarManufacturer-SQLServer2019,Primary key for EntityName(),SurrogateKeyNumber,,Primary key for EntityName()
+1075838983::369,sdVehicleSalesCost,Domain,GroupOne-RawEuropeanCarManufacturer-SQLServer2019,Subdomain for objects relating to vehicle price.,sdVehicleSalesCost,,Subdomain for objects relating to vehicle price.
+1075838983::370,VehicleSalePrice,Domain,GroupOne-RawEuropeanCarManufacturer-SQLServer2019,"Price of vehicle determined at time of sale. 
+",VehicleSalePrice,,"Price of vehicle determined at time of sale. 
+"
+1075838983::371,DiscountedSalePrice,Domain,GroupOne-RawEuropeanCarManufacturer-SQLServer2019,"Price of vehicle with discounts applied at time of sale. 
+",DiscountedSalePrice,,"Price of vehicle with discounts applied at time of sale. 
+"
+1075838983::372,Fees,Domain,GroupOne-RawEuropeanCarManufacturer-SQLServer2019,Additional fees applied based on pre-sale preparation of Vehicle.,Fees,,Additional fees applied based on pre-sale preparation of Vehicle.
+1075838983::373,sdDate,Domain,GroupOne-RawEuropeanCarManufacturer-SQLServer2019,Subdomain for objects containing date properties.,sdDate,,Subdomain for objects containing date properties.
+1075838983::374,SaleDate,Domain,GroupOne-RawEuropeanCarManufacturer-SQLServer2019,The date a Vehicle is/was sold.,SaleDate,,The date a Vehicle is/was sold.
+1075838983::375,PurchaseDate,Domain,GroupOne-RawEuropeanCarManufacturer-SQLServer2019,The date the Vehicle is/was purchased.,PurchaseDate,,The date the Vehicle is/was purchased.
+1075838983::376,sdHashKey,Domain,GroupOne-RawEuropeanCarManufacturer-SQLServer2019,remove,sdHashKey,,
+1075838983::377,RowLevelKey,Domain,GroupOne-RawEuropeanCarManufacturer-SQLServer2019,remove,RowLevelKey,,
+1075838983::378,sdLongTextString,Domain,GroupOne-RawEuropeanCarManufacturer-SQLServer2019,Subdomain for character data types containing large amounts of text.,sdLongTextString,,Subdomain for character data types containing large amounts of text.
+1075838983::379,sdFlagString,Domain,GroupOne-RawEuropeanCarManufacturer-SQLServer2019,Subdomain for character data types that represent a boolean character.,sdFlagString,,Subdomain for character data types that represent a boolean character.
+1075838983::380,Note,Domain,GroupOne-RawEuropeanCarManufacturer-SQLServer2019,Object that is used to supply reason for auditting a row within a table of the database.,Note,,Object that is used to supply reason for auditting a row within a table of the database.
+1075838983::381,sdShortTextString,Domain,GroupOne-RawEuropeanCarManufacturer-SQLServer2019,Subdomain for character data types containing small amounts of text.,sdShortTextString,,Subdomain for character data types containing small amounts of text.
+1075838983::382,StockCode,Domain,GroupOne-RawEuropeanCarManufacturer-SQLServer2019,Object that is made up of a combination of numerical and character values and is used to identify A Vehicle in Stock. (unique to each vehicle),StockCode,,Object that is made up of a combination of numerical and character values and is used to identify A Vehicle in Stock. (unique to each vehicle)
+1075838983::383,InvoiceNumber,Domain,GroupOne-RawEuropeanCarManufacturer-SQLServer2019,Object that is made up of a combination of numerical and character values and is used to uniquely identify a vehicle upon sale.,InvoiceNumber,,Object that is made up of a combination of numerical and character values and is used to uniquely identify a vehicle upon sale.
+1075838983::384,sdVehicleString,Domain,GroupOne-RawEuropeanCarManufacturer-SQLServer2019,Subdomain for objects that describe the characteristics of a Vehicle.,sdVehicleString,,Subdomain for objects that describe the characteristics of a Vehicle.
+1075838983::385,VehicleIdentifier,Domain,GroupOne-RawEuropeanCarManufacturer-SQLServer2019,Character object that is used to represent the make and model of a vehicle,VehicleIdentifier,,Character object that is used to represent the make and model of a vehicle
+1075838983::386,VehicleColor,Domain,GroupOne-RawEuropeanCarManufacturer-SQLServer2019,Object representative of the color of a Vehicle,VehicleColor,,Object representative of the color of a Vehicle
+1075838983::387,sdSysTime,Domain,GroupOne-RawEuropeanCarManufacturer-SQLServer2019,Date and time object used for database auditting purposes.,sdSysTime,,Date and time object used for database auditting purposes.
+1075838983::388,SysStartTime,Domain,GroupOne-RawEuropeanCarManufacturer-SQLServer2019,Date and time object used for database auditting purposes.,SysStartTime,,Date and time object used for database auditting purposes.
+1075838983::389,SysEndTime,Domain,GroupOne-RawEuropeanCarManufacturer-SQLServer2019,Date and time object used for database auditting purposes.,SysEndTime,,Date and time object used for database auditting purposes.
+1075838983::390,AuditFlag,Domain,GroupOne-RawEuropeanCarManufacturer-SQLServer2019,Character object representative of a boolean flag used only for database auditting purposes.,AuditFlag,,Character object representative of a boolean flag used only for database auditting purposes.
+1075838983::449,sdFlagBit,Domain,GroupOne-RawEuropeanCarManufacturer-SQLServer2019,Subdomain for integer values representative of a boolean flag.,sdFlagBit,,Subdomain for integer values representative of a boolean flag.
+1075838983::452,FlagFalse,Domain,GroupOne-RawEuropeanCarManufacturer-SQLServer2019,Integer flag value which is used to indicate or describe a piece of information to be false.,FlagFalse,,Integer flag value which is used to indicate or describe a piece of information to be false.
+1075838983::455,sdAddressesString,Domain,GroupOne-RawEuropeanCarManufacturer-SQLServer2019,The subdomain for string data types relating to a persons address.,sdAddressesString,,The subdomain for string data types relating to a persons address.
+1075838983::456,AddressString,Domain,GroupOne-RawEuropeanCarManufacturer-SQLServer2019,Represents the house number and street value/name portion of a persons address.,AddressString,,Represents the house number and street value/name portion of a persons address.
+1075838983::457,PostalCodeString,Domain,GroupOne-RawEuropeanCarManufacturer-SQLServer2019,Represents the postal code value portion of an address.,PostalCodeString,,Represents the postal code value portion of an address.
+1075838983::458,TownString,Domain,GroupOne-RawEuropeanCarManufacturer-SQLServer2019,Represents the city/town portion of an address.,TownString,,Represents the city/town portion of an address.
+1075838983::483,sdCountryStringVariants,Domain,GroupOne-RawEuropeanCarManufacturer-SQLServer2019,Subdomain for the variation of country descriptors.,sdCountryStringVariants,,Subdomain for the variation of country descriptors.
+1075838983::484,CountryISO2,Domain,GroupOne-RawEuropeanCarManufacturer-SQLServer2019,Two character object which can only be comprised of letter values and supplies a country code to represent the name of a country.,CountryISO2,,Two character object which can only be comprised of letter values and supplies a country code to represent the name of a country.
+1075838983::485,CountryISO3,Domain,GroupOne-RawEuropeanCarManufacturer-SQLServer2019,Three character object which can only be comprised of letter values and supplies a country code to represent the name of a country.,CountryISO3,,Three character object which can only be comprised of letter values and supplies a country code to represent the name of a country.
+1075838983::486,CountryString,Domain,GroupOne-RawEuropeanCarManufacturer-SQLServer2019,Character object representing the name of a country.,CountryString,,Character object representing the name of a country.
+1075838983::488,RegionString,Domain,GroupOne-RawEuropeanCarManufacturer-SQLServer2019,Character object rerpresenting the name of a Region.,RegionString,,Character object rerpresenting the name of a Region.
+1075838983::521,sdBusinessComponentsString,Domain,GroupOne-RawEuropeanCarManufacturer-SQLServer2019,Subdomain for objects relating to objects that facilitate the business.,sdBusinessComponentsString,,Subdomain for objects relating to objects that facilitate the business.
+1075838983::522,DepartmentString,Domain,GroupOne-RawEuropeanCarManufacturer-SQLServer2019,Character object which is used to describe the names of departments within the European Car Manufacturer Business.,DepartmentString,,Character object which is used to describe the names of departments within the European Car Manufacturer Business.
+1075838983::554,sdOrdinalNumber,Domain,GroupOne-RawEuropeanCarManufacturer-SQLServer2019,Subdomain for integer objects used in the database to specify a position for their respective row.,sdOrdinalNumber,,Subdomain for integer objects used in the database to specify a position for their respective row.
+1075838983::565,CustomerComments,Domain,GroupOne-RawEuropeanCarManufacturer-SQLServer2019,Large text object used to describe comments or reviews by customers about a particular vehicle,CustomerComments,,Large text object used to describe comments or reviews by customers about a particular vehicle
+1075838983::568,VehicleSalesThresholdCategory,Domain,GroupOne-RawEuropeanCarManufacturer-SQLServer2019,Numerical object to categorize vehicles based on their sale price.,VehicleSalesThresholdCategory,,Numerical object to categorize vehicles based on their sale price.
+1075838983::585,DateAdded,Domain,GroupOne-RawEuropeanCarManufacturer-SQLServer2019,Similar to SysStartTime object.,DateAdded,,Similar to SysStartTime object.
+1075838983::586,sdPersonNameString,Domain,GroupOne-RawEuropeanCarManufacturer-SQLServer2019,Subdomain for character objects representing the name of a person.,sdPersonNameString,,Subdomain for character objects representing the name of a person.
+1075838983::589,sdTimeString,Domain,GroupOne-RawEuropeanCarManufacturer-SQLServer2019,Subdomain for string objects representing a time value,sdTimeString,,Subdomain for string objects representing a time value
+1075838983::592,ClassTimeString,Domain,GroupOne-RawEuropeanCarManufacturer-SQLServer2019,"String object representing our class time, used for database auditting purposes.",ClassTimeString,,"String object representing our class time, used for database auditting purposes."
+1075838983::594,sdProjectString,Domain,GroupOne-RawEuropeanCarManufacturer-SQLServer2019,Subdomain for character objects relating to the final project itself.,sdProjectString,,Subdomain for character objects relating to the final project itself.
+1075838983::597,GrouplProjectNameString,Domain,GroupOne-RawEuropeanCarManufacturer-SQLServer2019,Character object representing the name of our project.,GrouplProjectNameString,,Character object representing the name of our project.
+1075838983::607,DateOfLastUpdate,Domain,GroupOne-RawEuropeanCarManufacturer-SQLServer2019,Similar to SysEndTime Object.,DateOfLastUpdate,,Similar to SysEndTime Object.
+1075838983::608,FirstNameString,Domain,GroupOne-RawEuropeanCarManufacturer-SQLServer2019,Character object representing the first name of a person.,FirstNameString,,Character object representing the first name of a person.
+1075838983::610,LastNameString,Domain,GroupOne-RawEuropeanCarManufacturer-SQLServer2019,Character object representing the last name of a person.,LastNameString,,Character object representing the last name of a person.
+1075838983::634,sdCustomerString,Domain,GroupOne-RawEuropeanCarManufacturer-SQLServer2019,Subdomain representing character objects which are used to describe a Customer.,sdCustomerString,,Subdomain representing character objects which are used to describe a Customer.
+1075838983::643,FullNameString,Domain,GroupOne-RawEuropeanCarManufacturer-SQLServer2019,Character object representing both first and last name of a person.,FullNameString,,Character object representing both first and last name of a person.
+1075838983::651,VehicleManufacturerMarketingType,Domain,GroupOne-RawEuropeanCarManufacturer-SQLServer2019,Character object that is used to categorize the Make of a Vehicle based on the types of cars that are offered in their line up.,VehicleManufacturerMarketingType,,Character object that is used to categorize the Make of a Vehicle based on the types of cars that are offered in their line up.
+1075838983::889,TransactionNumber,Domain,GroupOne-RawEuropeanCarManufacturer-SQLServer2019,Integer object that used to determine the amount of times a row has been auditted.,TransactionNumber,,Integer object that used to determine the amount of times a row has been auditted.
+1075838983::891,LineItemNumber,Domain,GroupOne-RawEuropeanCarManufacturer-SQLServer2019,Integer object that indicates the position of a repeating invoice number in the SalesOrderVehicleDetails table,LineItemNumber,,Integer object that indicates the position of a repeating invoice number in the SalesOrderVehicleDetails table
+1075838983::909,CustomerName,Domain,GroupOne-RawEuropeanCarManufacturer-SQLServer2019,"Object that describes the name of a Customer, (name can either represent a person or business )",CustomerName,,"Object that describes the name of a Customer, (name can either represent a person or business )"
+1075838983::911,CustomerSpendCapacity,Domain,GroupOne-RawEuropeanCarManufacturer-SQLServer2019,"Integer object relating to the amount of money a Customer has spent, also used to categorize Customers based on how much they spend.",CustomerSpendCapacity,,"Integer object relating to the amount of money a Customer has spent, also used to categorize Customers based on how much they spend."
