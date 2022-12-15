@@ -1,0 +1,134 @@
+ERwin Property Ids,1075850516::User Formatted Name  [read only],0::Object Type  [read only],1073742244::Owner Path  [read only],1073742126::Name,1075849017::Attribute
+1075838981::840,CategoryDescription,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.SalesCategoryThreshold,Category Description,Category Description
+1075838981::282,CheckConstraintRuleName,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.uvw_FindColumnDefinitionPlusDefaultAndCheckConstraint,Check Constraint Rule Name,Check Constraint Rule Name
+1075838981::283,CheckConstraintRuleNameDefinition,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.uvw_FindColumnDefinitionPlusDefaultAndCheckConstraint,Check Constraint Rule Name Definition,Check Constraint Rule Name Definition
+1075838981::601,ClassTime,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.UserAuthorization,Class Time,Class Time
+1075838981::274,ColumnName,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.uvw_FindColumnDefinitionPlusDefaultAndCheckConstraint,Column Name,Column Name
+1075838981::811,Cost,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.ManufacturerVehicleStock,Cost,Cost
+1075838981::756,CountryID,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.Country,Country ID,Country ID
+1075838981::759,CountryID,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.Customer,Country ID,Country ID
+1075838981::762,CountryID,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.ManufacturerVehicleMake,Country ID,Country ID
+1075838981::768,CountryISO2,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.Country,Country ISO2,Country ISO2
+1075838981::764,CountryISO3,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.Country,Country ISO3,Country ISO3
+1075838981::766,CountryName,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.Country,Country Name,Country Name
+1075838981::775,CustomerAddress1,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.Customer,Customer Address1,Customer Address1
+1075838981::776,CustomerAddress2,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.Customer,Customer Address2,Customer Address2
+1075838981::828,CustomerComments,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.ManufacturerVehicleStock,Customer Comments,Customer Comments
+1075838981::884,CustomerExpenditureClassificationID,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.CustomerExpenditureClassification,Customer Expenditure Classification ID,Customer Expenditure Classification ID
+1075838981::887,CustomerExpenditureClassificationID,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.Customer,Customer Expenditure Classification ID,Customer Expenditure Classification ID
+1075838981::952,CustomerExpenditureClassifier,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.CustomerExpenditureClassification,Customer Expenditure Classifier,Customer Expenditure Classifier
+1075838981::770,CustomerID,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.Customer,Customer ID,Customer ID
+1075838981::773,CustomerID,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.SalesOrderVehicle,Customer ID,Customer ID
+1075838981::980,CustomerName,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.Customer,Customer Name,Customer Name
+1075838981::780,CustomerPostalCode,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.Customer,Customer Postal Code,Customer Postal Code
+1075838981::777,CustomerTown,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.Customer,Customer Town,Customer Town
+1075838981::278,DataType,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.uvw_FindColumnDefinitionPlusDefaultAndCheckConstraint,Data Type,Data Type
+1075838981::603,DateAdded,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.UserAuthorization,Date Added,Date Added
+1075838981::620,DateOfLastUpdate,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.UserAuthorization,Date Of Last Update,Date Of Last Update
+1075838981::280,DefaultName,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.uvw_FindColumnDefinitionPlusDefaultAndCheckConstraint,Default Name,Default Name
+1075838981::281,DefaultNameDefinition,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.uvw_FindColumnDefinitionPlusDefaultAndCheckConstraint,Default Name Definition,Default Name Definition
+1075838981::820,DeliveryCharge,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.ManufacturerVehicleStock,Delivery Charge,Delivery Charge
+1075838981::519,DepartmentID,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.Department,Department ID,Department ID
+1075838981::733,DepartmentID,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.Staff,Department ID,Department ID
+1075838981::941,DepartmentName,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.Department,Department Name,Department Name
+1075838981::868,DerivedDiscountedSalePrice,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.SalesOrderVehicleDetail,Derived Discounted Sale Price,Derived Discounted Sale Price
+1075838981::277,DomainName,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.uvw_FindColumnDefinitionPlusDefaultAndCheckConstraint,Domain Name,Domain Name
+1075838981::276,FullyQualifiedDomainName,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.uvw_FindColumnDefinitionPlusDefaultAndCheckConstraint,Fully Qualified Domain Name,Fully Qualified Domain Name
+1075838981::271,FullyQualifiedTableName,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.uvw_FindColumnDefinitionPlusDefaultAndCheckConstraint,Fully Qualified Table Name,Fully Qualified Table Name
+1075838981::618,GroupMemberFirstName,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.UserAuthorization,Group Member First Name,Group Member First Name
+1075838981::615,GroupMemberLastName,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.UserAuthorization,Group Member Last Name,Group Member Last Name
+1075838981::619,GroupName,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.UserAuthorization,Group Name,Group Name
+1075838981::602,GroupProjectName,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.UserAuthorization,Group Project Name,Group Project Name
+1075838981::848,InvoiceNumber,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.SalesOrderVehicle, Invoice Number, Invoice Number
+1075838981::786,IsCustomerCreditRisk,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.Customer, Is Customer Credit Risk, Is Customer Credit Risk
+1075838981::783,IsCustomerReseller,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.Customer, Is Customer Reseller, Is Customer Reseller
+1075838981::401,IsDeleted,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.SalesOrderVehicleDetail, Is Deleted, Is Deleted
+1075838981::408,IsDeleted,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.ManufacturerVehicleStock, Is Deleted, Is Deleted
+1075838981::415,IsDeleted,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.ManufacturerVehicleModel, Is Deleted, Is Deleted
+1075838981::422,IsDeleted,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.SalesOrderVehicle, Is Deleted, Is Deleted
+1075838981::429,IsDeleted,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.Country, Is Deleted, Is Deleted
+1075838981::436,IsDeleted,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.Staff, Is Deleted, Is Deleted
+1075838981::443,IsDeleted,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.Customer, Is Deleted, Is Deleted
+1075838981::626,IsDeleted,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.ManufacturerVehicleMake, Is Deleted, Is Deleted
+1075838981::279,IsNullable,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.uvw_FindColumnDefinitionPlusDefaultAndCheckConstraint, Is Nullable, Is Nullable
+1075838981::823,IsPremiumRoadHandlingPackage,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.ManufacturerVehicleStock, Is Premium Road Handling Package, Is Premium Road Handling Package
+1075838981::865,LineItemDiscount,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.SalesOrderVehicleDetail,Line Item Discount,Line Item Discount
+1075838981::983,LineItemNumber,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.SalesOrderVehicleDetail,Line Item Number,Line Item Number
+1075838981::834,LowerThreshold,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.SalesCategoryThreshold,Lower Threshold,Lower Threshold
+1075838981::878,ManagerID,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.Staff,Manager ID,Manager ID
+1075838981::671,ManufacturerMarketingCategoryID,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.ManufacturerMarketingCategory,Manufacturer Marketing Category ID,Manufacturer Marketing Category ID
+1075838981::795,ManufacturerVehicleMakeID,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.ManufacturerVehicleMake,Manufacturer Vehicle Make ID,Manufacturer Vehicle Make ID
+1075838981::798,ManufacturerVehicleMakeID,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.ManufacturerVehicleModel,Manufacturer Vehicle Make ID,Manufacturer Vehicle Make ID
+1075838981::800,ManufacturerVehicleMakeName,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.ManufacturerVehicleMake,Manufacturer Vehicle Make Name,Manufacturer Vehicle Make Name
+1075838981::674,ManufacturerVehicleMarketingCategoryID,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.ManufacturerVehicleMake,Manufacturer Vehicle Marketing Category ID,Manufacturer Vehicle Marketing Category ID
+1075838981::676,ManufacturerVehicleMarketingType,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.ManufacturerMarketingCategory,Manufacturer Vehicle Marketing Type,Manufacturer Vehicle Marketing Type
+1075838981::681,ManufacturerVehicleModelID,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.ManufacturerVehicleModel,Manufacturer Vehicle Model ID,Manufacturer Vehicle Model ID
+1075838981::684,ManufacturerVehicleModelID,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.ManufacturerVehicleStock,Manufacturer Vehicle Model ID,Manufacturer Vehicle Model ID
+1075838981::789,ManufacturerVehicleModelName,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.ManufacturerVehicleModel,Manufacturer Vehicle Model Name,Manufacturer Vehicle Model Name
+1075838981::792,ManufacturerVehicleModelVariant,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.ManufacturerVehicleModel,Manufacturer Vehicle Model Variant,Manufacturer Vehicle Model Variant
+1075838981::803,ManufacturerVehicleStockID,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.ManufacturerVehicleStock,Manufacturer Vehicle Stock ID,Manufacturer Vehicle Stock ID
+1075838981::806,ManufacturerVehicleStockID,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.SalesOrderVehicleDetail,Manufacturer Vehicle Stock ID,Manufacturer Vehicle Stock ID
+1075838981::400,Note,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.SalesOrderVehicleDetail,Note,Note
+1075838981::407,Note,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.ManufacturerVehicleStock,Note,Note
+1075838981::414,Note,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.ManufacturerVehicleModel,Note,Note
+1075838981::421,Note,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.SalesOrderVehicle,Note,Note
+1075838981::428,Note,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.Country,Note,Note
+1075838981::435,Note,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.Staff,Note,Note
+1075838981::442,Note,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.Customer,Note,Note
+1075838981::625,Note,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.ManufacturerVehicleMake,Note,Note
+1075838981::275,OrdinalPosition,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.uvw_FindColumnDefinitionPlusDefaultAndCheckConstraint,Ordinal Position,Ordinal Position
+1075838981::817,PartsCharge,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.ManufacturerVehicleStock,Parts Charge,Parts Charge
+1075838981::831,PurchaseDate,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.ManufacturerVehicleStock,Purchase Date,Purchase Date
+1075838981::814,RepairsCharge,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.ManufacturerVehicleStock,Repairs Charge,Repairs Charge
+1075838981::854,SaleDate,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.SalesOrderVehicle,Sale Date,Sale Date
+1075838981::862,SalePrice,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.SalesOrderVehicleDetail,Sale Price,Sale Price
+1075838981::879,SalesCategoryThresholdID,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.SalesCategoryThreshold,Sales Category Threshold ID,Sales Category Threshold ID
+1075838981::882,SalesCategoryThresholdID,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.SalesOrderVehicle,Sales Category Threshold ID,Sales Category Threshold ID
+1075838981::668,SalesOrderCategoryDescription,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.SalesOrderVehicle,Sales Order Category Description,Sales Order Category Description
+1075838981::857,SalesOrderVehicleDetailID,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.SalesOrderVehicleDetail,Sales Order Vehicle Detail ID,Sales Order Vehicle Detail ID
+1075838981::843,SalesOrderVehicleID,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.SalesOrderVehicle,Sales Order Vehicle ID,Sales Order Vehicle ID
+1075838981::846,SalesOrderVehicleID,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.SalesOrderVehicleDetail,Sales Order Vehicle ID,Sales Order Vehicle ID
+1075838981::769,SalesRegion,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.Country,Sales Region,Sales Region
+1075838981::272,SchemaName,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.uvw_FindColumnDefinitionPlusDefaultAndCheckConstraint,Schema Name,Schema Name
+1075838981::870,StaffID,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.Staff,Staff ID,Staff ID
+1075838981::873,StaffID,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.SalesOrderVehicle,Staff ID,Staff ID
+1075838981::875,StaffName,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.Staff,Staff Name,Staff Name
+1075838981::808,StockCode,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.ManufacturerVehicleStock,Stock Code,Stock Code
+1075838981::859,StockCode,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.SalesOrderVehicleDetail,Stock Code,Stock Code
+1075838981::404,SysEndTime,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.SalesOrderVehicleDetail,Sys End Time,Sys End Time
+1075838981::411,SysEndTime,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.ManufacturerVehicleStock,Sys End Time,Sys End Time
+1075838981::418,SysEndTime,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.ManufacturerVehicleModel,Sys End Time,Sys End Time
+1075838981::425,SysEndTime,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.SalesOrderVehicle,Sys End Time,Sys End Time
+1075838981::432,SysEndTime,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.Country,Sys End Time,Sys End Time
+1075838981::439,SysEndTime,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.Staff,Sys End Time,Sys End Time
+1075838981::446,SysEndTime,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.Customer,Sys End Time,Sys End Time
+1075838981::631,SysEndTime,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.ManufacturerVehicleMake,Sys End Time,Sys End Time
+1075838981::403,SysStartTime,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.SalesOrderVehicleDetail,Sys Start Time,Sys Start Time
+1075838981::410,SysStartTime,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.ManufacturerVehicleStock,Sys Start Time,Sys Start Time
+1075838981::417,SysStartTime,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.ManufacturerVehicleModel,Sys Start Time,Sys Start Time
+1075838981::424,SysStartTime,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.SalesOrderVehicle,Sys Start Time,Sys Start Time
+1075838981::431,SysStartTime,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.Country,Sys Start Time,Sys Start Time
+1075838981::438,SysStartTime,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.Staff,Sys Start Time,Sys Start Time
+1075838981::445,SysStartTime,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.Customer,Sys Start Time,Sys Start Time
+1075838981::629,SysStartTime,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.ManufacturerVehicleMake,Sys Start Time,Sys Start Time
+1075838981::273,TableName,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.uvw_FindColumnDefinitionPlusDefaultAndCheckConstraint,Table Name,Table Name
+1075838981::851,TotalSalePrice,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.SalesOrderVehicle,Total Sale Price,Total Sale Price
+1075838981::902,TransactionNumber,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.SalesOrderVehicleDetail,Transaction Number,Transaction Number
+1075838981::903,TransactionNumber,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.ManufacturerVehicleStock,Transaction Number,Transaction Number
+1075838981::904,TransactionNumber,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.ManufacturerVehicleModel,Transaction Number,Transaction Number
+1075838981::905,TransactionNumber,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.SalesOrderVehicle,Transaction Number,Transaction Number
+1075838981::906,TransactionNumber,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.Country,Transaction Number,Transaction Number
+1075838981::907,TransactionNumber,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.Staff,Transaction Number,Transaction Number
+1075838981::908,TransactionNumber,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.Customer,Transaction Number,Transaction Number
+1075838981::957,TransactionNumber,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.ManufacturerVehicleMake,Transaction Number,Transaction Number
+1075838981::837,UpperThreshold,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.SalesCategoryThreshold,Upper Threshold,Upper Threshold
+1075838981::402,UserAuthorizationID,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.SalesOrderVehicleDetail,User Authorization ID,User Authorization ID
+1075838981::409,UserAuthorizationID,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.ManufacturerVehicleStock,User Authorization ID,User Authorization ID
+1075838981::416,UserAuthorizationID,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.ManufacturerVehicleModel,User Authorization ID,User Authorization ID
+1075838981::423,UserAuthorizationID,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.SalesOrderVehicle,User Authorization ID,User Authorization ID
+1075838981::430,UserAuthorizationID,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.Country,User Authorization ID,User Authorization ID
+1075838981::437,UserAuthorizationID,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.Staff,User Authorization ID,User Authorization ID
+1075838981::444,UserAuthorizationID,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.Customer,User Authorization ID,User Authorization ID
+1075838981::628,UserAuthorizationID,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.ManufacturerVehicleMake,User Authorization ID,User Authorization ID
+1075838981::613,UserAuthorizationId,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.UserAuthorization,User Authorization ID,User Authorization ID
+1075838981::826,VehicleColor,Attribute,GroupOne-RawEuropeanCarManufacturer-SQLServer2019.ManufacturerVehicleStock,Vehicle Color,Vehicle Color
