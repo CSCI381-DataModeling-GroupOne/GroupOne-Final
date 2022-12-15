@@ -1,4 +1,5 @@
-CREATE TRIGGER uTu_Customer ON HumanResources.Staff 
+
+CREATE TRIGGER uTu_Staff ON HumanResources.Staff 
 INSTEAD OF UPDATE AS
 BEGIN
     DECLARE 
@@ -7,7 +8,7 @@ BEGIN
 	IF exists (SELECT * FROM inserted) and exists (SELECT * FROM deleted)
 	begin
 		UPDATE A
-		SET 
+		SET
             A.StaffID = I.StaffID,
             A.StaffName = I.StaffName,
             A.StaffEmail = I.StaffEmail,
@@ -17,9 +18,10 @@ BEGIN
             A.SysStartTime = @TIMESTAMP_NOW, 
             A.SysEndTime = @MAX_DATETIME, 
             A.TransactionNumber = I.TransactionNumber + 1
+
 		FROM HumanResources.Staff A
 		INNER JOIN INSERTED I
-			ON A.StaffID = I.StaffID;
+			ON A.StaffId = I.StaffId;
 	end
     insert into Audit.StaffHistory
     (
@@ -28,27 +30,27 @@ BEGIN
         IsDeleted,
         StaffID,
         StaffName,
-        ManagerID,
-        DepartmentID,
-        Salary,
         StaffEmail,
+        Salary,
+        DepartmentID,
+        ManagerID,
+        UserAuthorizationId,
         SysStartTime,
         SysEndTime,
-        UserAuthorizationId,
         TransactionNumber
     )
     select 
-		'U',
+		'U'
         'Row was updated',
         'N',
         StaffID,
         StaffName,
-        ManagerID,
-        DepartmentID,
-        Salary,
         StaffEmail,
-        Deleted.SysStartTime,
-        @TIMESTAMP_NOW,
+        Salary,
+        DepartmentID,
+        ManagerID,
+		Deleted.SysStartTime,
+		@MAX_DATETIME,
         UserAuthorizationId,
         Deleted.TransactionNumber
     from Deleted;
