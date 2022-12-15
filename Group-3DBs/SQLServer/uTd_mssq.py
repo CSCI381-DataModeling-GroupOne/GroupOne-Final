@@ -93,7 +93,6 @@ BEGIN
 
 end
 """
-    # src_file = "/Users/wdanni/381heller/final/triggers/audit_tables.txt"
     print(f"cwpath: {path[0]}")
     sol_path = Path(path[0] + f'/mssql/uTd_{_tbl}.sql')
     sol_path.touch(exist_ok=False)   
