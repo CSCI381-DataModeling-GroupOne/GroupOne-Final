@@ -1,0 +1,127 @@
+Audit.CountryHistory
+	TriggerOption      
+	Notes     
+	IsDeleted
+	CountryID
+	CountryName
+	CountryISO3
+	CountryISO2
+	SalesRegion
+	SysEndTime
+	SysStartTime
+	UserAuthorizationId
+	TransactionNumber
+
+Audit.CustomerHistory
+	TriggerOption        
+	Notes     
+	IsDeleted
+	CustomerId
+	CustomerName
+	CustomerAddress
+	CustomerExpenditureClassificationID
+	IsCustomerCreditRisk
+	IsCustomerReseller 
+	SysStartTime 
+	SysEndTime 
+	UserAuthorizationId
+	TransactionNumber
+
+Audit.DepartmentHistory
+	TriggerOption      
+	Notes     
+	IsDeleted
+	DepartmentId       
+	Department         
+	SysStartTime 
+	SysEndTime 
+	UserAuthorizationId
+	TransactionNumber
+
+Audit.ManufacturerVehicleMakeHistory
+	TriggerOption        
+	Notes     
+	IsDeleted
+	ManufacturerVehicleMakeName
+	ManufacturerVehicleMakeID
+	CountryID
+	SysEndTime          
+	SysStartTime
+	UserAuthorizationId 
+	TransactionNumber    
+
+Audit.ManufacturerVehicleModelHistory
+	TriggerOption  
+	Notes     
+	IsDeleted
+	ManufacturerVehicleModelID
+	ManufacturerModelName
+	ManufacturerModelVariant
+	SysEndTime          
+	SysStartTime
+	UserAuthorizationId     
+	TransactionNumber
+
+Audit.ManufacturerVehicleStockHistory
+	TriggerOption        
+	Notes     
+	IsDeleted
+	ManufacturerVehicleStockID 
+	ManufacturerVehicleModelID 
+	StockCode            
+	Cost                 
+	DeliveryCharge       
+	PartsCharge          
+	PurchaseDate         
+	RepairsCharge        
+	SysStartTime         
+	SysEndTime           
+	UserAuthorizationId  
+	TransactionNumber
+
+Audit.SalesOrderVehicleDetailHistory
+	TriggerOption        
+	Notes     
+	IsDeleted
+	SalesOrderVehicleDetailID
+	ManufacturerVehicleStockID 
+	SalesOrderVehicleID  
+	SalePrice            
+	LineItemNumber       
+	LineItemDiscount     
+	DerivedDiscountedSalePrice 
+	StockCode            
+	StaffID  
+	SysEndTime           
+	SysStartTime 
+	UserAuthorizationId 
+	TransactionNumber       
+
+Audit.SalesOrderVehicleHistory
+	TriggerOption      
+	Notes     
+	IsDeleted
+	SalesOrderVehicleID
+	InvoiceNumber
+	SaleDate     
+	CustomerID   
+	StaffID      
+	SysEndTime           
+	SysStartTime 
+	UserAuthorizationId 
+	TransactionNumber       
+
+Audit.StaffHistory
+	TriggerOption        
+	Notes     
+	IsDeleted
+	StaffID
+	StaffName          
+	StaffEmail         
+	Salary             
+	DepartmentID       
+	ManagerID          
+	SysEndTime           
+	SysStartTime 
+	UserAuthorizationId    
+	TransactionNumber    
