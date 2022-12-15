@@ -1,6 +1,6 @@
 
-CREATE TRIGGER uTu_ManufacturerVehicleStock ON Inventory.ManufacturerVehicleStock 
-INSTEAD OF UPDATE AS
+CREATE TRIGGER uTd_ManufacturerVehicleStock ON Inventory.ManufacturerVehicleStock 
+AFTER DELETE AS
 BEGIN
     DECLARE 
        @TIMESTAMP_NOW datetime = SYSDATETIME,

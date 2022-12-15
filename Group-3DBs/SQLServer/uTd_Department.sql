@@ -1,6 +1,6 @@
 
-CREATE TRIGGER uTu_Department ON HumanResources.Department 
-INSTEAD OF UPDATE AS
+CREATE TRIGGER uTd_Department ON HumanResources.Department 
+AFTER DELETE AS
 BEGIN
     DECLARE 
        @TIMESTAMP_NOW datetime = SYSDATETIME,

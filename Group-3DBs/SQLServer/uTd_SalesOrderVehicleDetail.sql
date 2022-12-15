@@ -1,6 +1,6 @@
 
-CREATE TRIGGER uTu_SalesOrderVehicleDetail ON Sales.SalesOrderVehicleDetail 
-INSTEAD OF UPDATE AS
+CREATE TRIGGER uTd_SalesOrderVehicleDetail ON Sales.SalesOrderVehicleDetail 
+AFTER DELETE AS
 BEGIN
     DECLARE 
        @TIMESTAMP_NOW datetime = SYSDATETIME,

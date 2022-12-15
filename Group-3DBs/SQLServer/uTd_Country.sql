@@ -1,6 +1,6 @@
 
-CREATE TRIGGER uTu_Country ON Sales.Country 
-INSTEAD OF UPDATE AS
+CREATE TRIGGER uTd_Country ON Sales.Country 
+AFTER DELETE AS
 BEGIN
     DECLARE 
        @TIMESTAMP_NOW datetime = SYSDATETIME,

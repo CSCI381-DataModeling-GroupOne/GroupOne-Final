@@ -1,6 +1,6 @@
 
-CREATE TRIGGER uTu_Staff ON HumanResources.Staff 
-INSTEAD OF UPDATE AS
+CREATE TRIGGER uTd_Staff ON HumanResources.Staff 
+AFTER DELETE AS
 BEGIN
     DECLARE 
        @TIMESTAMP_NOW datetime = SYSDATETIME,

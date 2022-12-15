@@ -1,6 +1,6 @@
 
-CREATE TRIGGER uTu_Customer ON Sales.Customer 
-INSTEAD OF UPDATE AS
+CREATE TRIGGER uTd_Customer ON Sales.Customer 
+AFTER DELETE AS
 BEGIN
     DECLARE 
        @TIMESTAMP_NOW datetime = SYSDATETIME,

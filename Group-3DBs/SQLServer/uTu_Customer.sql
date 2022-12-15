@@ -5,7 +5,7 @@ BEGIN
     DECLARE 
        @TIMESTAMP_NOW datetime = SYSDATETIME,
        @MAX_DATETIME datetime = '9999-12-31 23:59:59';
-	IF exists (SELECT * FROM inserted) and exists (SELECT * FROM deleted)
+	IF (exists (SELECT * FROM inserted) and exists (SELECT * FROM deleted))
 	begin
 		UPDATE A
 		SET
