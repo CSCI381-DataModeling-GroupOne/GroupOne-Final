@@ -128,10 +128,9 @@ end
 
 dir_path = path[0]  ## get cwd
 print(dir_path)
-template_path = os.path.join(dir_path, 'solve_template.py')
 
 d = defaultdict(list)
-src_file = "/Users/wdanni/381heller/final/triggers/audit_tables.txt"
+src_file = dir_path + "/audit_tables.txt"
 tables = open(src_file).read().split("\n\n")
 pprint(tables)
 for tbl in tables:
