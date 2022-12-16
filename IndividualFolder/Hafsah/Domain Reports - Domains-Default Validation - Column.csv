@@ -1,0 +1,67 @@
+Domain Physical_Name,Null Option,Physical Data Type,Default Constraint Usage Physical_Name,Constraint Name,Default,Parent Default Constraint Usage,Value
+_default_,Null,CHAR(18),,,,,
+String,Null,VARCHAR(20),,,,,
+Number,Null,INTEGER,,,,,
+Datetime,Null,DATE,,,,,
+Blob,Null,BLOB,,,,,
+dEuropeanCarManufacturer,Null,CHAR(18),,,,,
+dBlob,Null,BINARY,,,,,
+dNumber,Null,INTEGER,,,,,
+dDatetime,Null,GEOMETRY,,,,,
+dString,Null,VARCHAR(20),DF_dString_Unavailable,DF_dString_Unavailable,DF_Template_Unavailable,,'Unavailable'
+sdSequenceNumber,Not Null,INTEGER,,,,,
+SurrogateKeyNumber,Not Null,INTEGER,,,,,
+sdVehicleSalePayment,Not Null,"MEDIUMINT(18,2)",DF_sdVehicleSalePayment_Price,DF_sdVehicleSalePayment_Price,DF_Template_Price,,0
+VehiclePrice,Not Null,"MEDIUMINT(18,2)",DF_VehiclePrice_Price,DF_VehiclePrice_Price,DF_Template_Price,,0
+DiscountedPrice,Not Null,"MEDIUMINT(18,2)",DF_DiscountedPrice_Price,DF_DiscountedPrice_Price,DF_Template_Price,,0
+CostOfFee,Not Null,"MEDIUMINT(18,2)",DF_CostOfFee_Price,DF_CostOfFee_Price,DF_Template_Price,,0
+sdDate,Null,LINESTRING,,,,,
+SaleDate,Null,LINESTRING,DF_SaleDate_Date,DF_SaleDate_Date,DF_Template_Date,,'19991231'
+PurchaseDate,Null,LINESTRING,DF_sdCountryStringVariantsPurchaseDate_Date,DF_sdCountryStringVariantsPurchaseDate_Date,DF_Template_Date,,'19991231'
+sdHashKey,Null,BINARY,,,,,
+RowLevelKey,Null,BLOB,,,,,
+sdLongTextString,Null,VARCHAR(200),DF_sdLongTextString_Unavailable,,DF_Template_Unavailable,,'Unavailable'
+sdFlagString,Null,VARCHAR(20),DF_sdFlagString_Unavailable,,DF_Template_Unavailable,,'Unavailable'
+Note,Null,VARCHAR(200),DF_Note,DF_Note_Unavailable,DF_Template_Note,,'Row was inserted'
+sdShortTextString,Null,VARCHAR(50),DF_sdShortTextString_Unavailable,,DF_Template_Unavailable,,'Unavailable'
+StockCode,Null,VARCHAR(50),DF_StockCode_Unavailable,,DF_Template_Unavailable,,'Unavailable'
+InvoiceNumber,Null,CHAR(8),DF_InvoiceNumber_InvoiceNumber,DF_InvoiceNumber_InvoiceNumber,DF_Template_InvoiceNumber,,'00000000'
+sdVehicleString,Null,VARCHAR(50),DF_sdVehicleDescriptonString_Unavailable,,DF_Template_Unavailable,,'Unavailable'
+VehicleIdentifier,Null,VARCHAR(150),DF_VehicleIdentifier_Unavailable,DF_VehicleNomenclature_Unknown,DF_Template_Unavailable,,'Unavailable'
+VehicleColor,Null,VARCHAR(50),DF_VehicleColor_Unavailable,DF_VehicleColor_Unknown,DF_Template_Unavailable,,'Unavailable'
+sdSysTime,Not Null,DATE,,,,,
+SysStartTime,Not Null,DATE,DF_SysStartTime_SysStartTime,DF_SysStartTime_SysStartTime,DF_Template_Sysdatetime,,sysdatetime()
+SysEndTime,Not Null,DATE,DF_SysEndTime_SysEndTime,DF_SysEndTime_SysEndTime,DF_Template_SysEndTime,,'99991231 23:59:59.9999999'
+AuditFlag,Null,VARCHAR(20),DF_AuditFlag_FlagNo,DF_AuditFlag_FlagNo,DF_Template_FlagNo,,'N'
+sdFlagBit,Null,TINYINT,DF_sdFlagBit_FlagFalse,DF_sdFlagBit_FlagFalse,DF_Template_FlagFalse,,0
+FlagFalse,Null,TINYINT,DF_FlagFalse_FlagFalse,DF_FlagFalse_FlagFalse,DF_Template_FlagFalse,,0
+sdAddressesString,Null,VARCHAR(20),DF_sdAddressesString_Unavailable,DF_sdAddressesString_Unavailable,DF_Template_Unavailable,,'Unavailable'
+AddressString,Null,VARCHAR(150),DF_AddressString_Unavailable,DF_AddressString_Unknown,DF_Template_Unavailable,,'Unavailable'
+PostalCodeString,Null,VARCHAR(20),DF_PostalCodeString_Unavailable,DF_PostalCodeString_Unavailable,DF_Template_Unavailable,,'Unavailable'
+TownString,Null,VARCHAR(20),DF_TownString_Unavailable,DF_TownString_Unavailable,DF_Template_Unavailable,,'Unavailable'
+sdCountryStringVariants,Null,VARCHAR(20),DF_sdCountryStringVariants_Unavailable,,DF_Template_Unavailable,,'Unavailable'
+CountryISO2,Null,CHAR(2),DF_CountryISO2,DF_CountryISO2_Unavailable,DF_Template_CountryISO2,,'AA'
+CountryISO3,Null,CHAR(3),DF_CountryISO3,,DF_Template_CountryISO3,,'AAA'
+CountryString,Null,VARCHAR(50),DF_CountryString_Unavailable,DF_CountryString_Unknown,DF_Template_Unavailable,,'Unavailable'
+RegionString,Null,VARCHAR(20),,,,,
+sdBusinessComponentsString,Null,VARCHAR(50),DF_sdBusinessComponentsString_Unavailable,,DF_Template_Unavailable,,'Unavailable'
+DepartmentString,Null,VARCHAR(50),DF_Domain_1022_Unavailable,DF_Domain_1022_Unavailable,DF_Template_Unavailable,,'Unavailable'
+sdOrdinalNumber,Not Null,SMALLINT,DF_OrdinalNumber,,DF_Template_OrdinalNumber,,1
+CustomerComments,Null,VARCHAR(200),DF_CustomerComments_Unavailable,,DF_Template_Unavailable,,'Unavailable'
+VehicleSalesThresholdCategory,Null,VARCHAR(50),Default_Constraint_Usage_1399,,DF_Template_Unavailable,,'Unavailable'
+DateAdded,Null,DATE,DF_DateAdded_Sysdatetime,,DF_Template_Sysdatetime,,sysdatetime()
+sdPersonNameString,Not Null,VARCHAR(50),DF_sdPersonNameString_Unavailable,,DF_Template_Unavailable,,'Unavailable'
+sdTimeString,Null,VARCHAR(20),Default_Constraint_Usage_1468,,DF_Template_Unavailable,,'Unavailable'
+ClassTimeString,Null,VARCHAR(20),,,,,
+sdProjectString,Null,VARCHAR(50),Default_Constraint_Usage_1379,,DF_Template_Unavailable,,'Unavailable'
+GrouplProjectNameString,Null,VARCHAR(50),,,,,
+DateOfLastUpdate,Not Null,DATE,,,,,
+FirstNameString,Not Null,VARCHAR(25),,,,,
+LastNameString,Not Null,VARCHAR(25),Default_Constraint_Usage_1376,,DF_Template_Unavailable,,'Unavailable'
+sdCustomerString,Null,VARCHAR(20),DF_sdCustomerString_Unavailable,,DF_Template_Unavailable,,'Unavailable'
+FullNameString,Not Null,VARCHAR(50),DF_sdPersonNameString_FullNameString,,DF_Template_Unavailable,,'Unavailable'
+VehicleManufacturerMarketingType,Null,VARCHAR(250),Default_Constraint_Usage_1430,,DF_Template_Unavailable,,'Unavailable'
+TransactionNumber,Not Null,SMALLINT,DF_TransactionNumber_OrdinalNumber,DF_TransactionNumber_OrdinalNumber,DF_Template_OrdinalNumber,,1
+LineItemNumber,Not Null,SMALLINT,DF_LineItemNumber_OrdinalNumber,DF_LineItemNumber_SequenceStartingValue,DF_Template_OrdinalNumber,,1
+CustomerName,Null,VARCHAR(50),DF_CustomerName_Unavailable,DF_PersonName_Unavailable,DF_Template_Unavailable,,'Unavailable'
+CustomerSpendCapacity,Null,VARCHAR(25),DF_CustomerSpendCapacity_Unavailable,DF_MarketingDescriptor_Unavailable,DF_Template_Unavailable,,'Unavailable'

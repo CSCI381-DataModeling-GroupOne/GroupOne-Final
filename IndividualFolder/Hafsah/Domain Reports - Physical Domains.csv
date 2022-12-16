@@ -1,0 +1,68 @@
+Domain Physical_Name,Comment,Null Option,Physical Data Type
+_default_,,Null,CHAR(18)
+String,,Null,VARCHAR(20)
+Number,,Null,INTEGER
+Datetime,,Null,DATE
+Blob,,Null,BLOB
+dEuropeanCarManufacturer,dApplicationName aka name of our root domain.,Null,CHAR(18)
+dBlob,"dBlob is of physical datatype Binary. Its contains only one subdomain, sdHaskey, which is in binary.",Null,BINARY
+dNumber,dNumber is the child of root domain dEuropeanCarManufacturer. It is of physical datatype Integer,Null,INTEGER
+dDatetime,dDateTime is under dEuropeanCarManufacturer. It is the parent of date-related domains,Null,GEOMETRY
+dString,"dString is child of dEuropeanCarManufacturer. It is by default varchar(20), but its children such as sdBusinessString and sdLongDescription can vary from varchar(50) to varchar(200)",Null,VARCHAR(20)
+sdSequenceNumber,Used in both columns and domains for surrogate keys for userAuthorization,Not Null,INTEGER
+SurrogateKeyNumber,"
+",Not Null,INTEGER
+sdVehicleSalePayment,Used in Price and Cost related domains.,Not Null,"MEDIUMINT(18,2)"
+VehiclePrice,,Not Null,"MEDIUMINT(18,2)"
+DiscountedPrice,,Not Null,"MEDIUMINT(18,2)"
+CostOfFee,,Not Null,"MEDIUMINT(18,2)"
+sdDate,String for date,Null,LINESTRING
+SaleDate,To take record of when a sale was made,Null,LINESTRING
+PurchaseDate,To take record of purchase date,Null,LINESTRING
+sdHashKey,Used fr RowLevelKeys,Null,BINARY
+RowLevelKey,For Row level keys. ,Null,BLOB
+sdLongTextString,subdomain for long strings,Null,VARCHAR(200)
+sdFlagString,sdFlagString for t/f situations,Null,VARCHAR(20)
+Note,Meant for Long notes,Null,VARCHAR(200)
+sdShortTextString,For Short text strings,Null,VARCHAR(50)
+StockCode,"Meant for stocks codes, which can contain numbers and letters.",Null,VARCHAR(50)
+InvoiceNumber,Invoice number to give to customers,Null,CHAR(8)
+sdVehicleString,String for stating vaheicle name,Null,VARCHAR(50)
+VehicleIdentifier,"Vehicle make, model, and model variant can be noted with this domain.",Null,VARCHAR(150)
+VehicleColor,Color of vehicle is reflected here.,Null,VARCHAR(50)
+sdSysTime,system's date and time,Not Null,DATE
+SysStartTime,Time at Start,Not Null,DATE
+SysEndTime,Time of the EndTime,Not Null,DATE
+AuditFlag,AuditFlag for Availability/Non-Availability,Null,VARCHAR(20)
+sdFlagBit,Flag bit for sinalling True or False in a situation,Null,TINYINT
+FlagFalse,,Null,TINYINT
+sdAddressesString,Address String,Null,VARCHAR(20)
+AddressString,Used for CUstomer Addresses,Null,VARCHAR(150)
+PostalCodeString,Postal Code String,Null,VARCHAR(20)
+TownString,Domain to list Town name,Null,VARCHAR(20)
+sdCountryStringVariants,subdomain for countrystring  variations,Null,VARCHAR(20)
+CountryISO2,Country String variation for an abbreviation,Null,CHAR(2)
+CountryISO3,Abbreviation for country,Null,CHAR(3)
+CountryString,Country string with varchar(50),Null,VARCHAR(50)
+RegionString,Domain for Region String,Null,VARCHAR(20)
+sdBusinessComponentsString,String for Business/Dept name,Null,VARCHAR(50)
+DepartmentString,String for Department name,Null,VARCHAR(50)
+sdOrdinalNumber,Smallint domain type used in transactions and line items.,Not Null,SMALLINT
+CustomerComments,Long comment subdomain of longstring,Null,VARCHAR(200)
+VehicleSalesThresholdCategory,Used for vehicle's category descriptions,Null,VARCHAR(50)
+DateAdded,"For user authorization colum, for dates that are added",Null,DATE
+sdPersonNameString,subdomain for Individual's names,Not Null,VARCHAR(50)
+sdTimeString,meant for class time string,Null,VARCHAR(20)
+ClassTimeString,Class Time for writing down our class's time.,Null,VARCHAR(20)
+sdProjectString,Meant for project-related information,Null,VARCHAR(50)
+GrouplProjectNameString,Meant for writing down group name,Null,VARCHAR(50)
+DateOfLastUpdate,Self-explanatory,Not Null,DATE
+FirstNameString,For first names,Not Null,VARCHAR(25)
+LastNameString,For last names,Not Null,VARCHAR(25)
+sdCustomerString,Customer String subdomain,Null,VARCHAR(20)
+FullNameString,For full names,Not Null,VARCHAR(50)
+VehicleManufacturerMarketingType,Domain for strings that need vehicle's marketing type,Null,VARCHAR(250)
+TransactionNumber,,Not Null,SMALLINT
+LineItemNumber,,Not Null,SMALLINT
+CustomerName,CustomerString with 50 characters for their name,Null,VARCHAR(50)
+CustomerSpendCapacity,Customer Spending Capacity string,Null,VARCHAR(25)
