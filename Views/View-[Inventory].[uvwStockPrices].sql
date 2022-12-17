@@ -35,7 +35,7 @@ ON c.CustomerID = So.CustomerID
 INNER JOIN sales.Country AS ctry
 ON ctry.CountryID = c.CountryID
 WHERE So.SaleDate >='2018-01-01' AND SO.SaleDate < '2019-01-01'
-AND ctry.CountryName != 'Switzerland'
+AND ctry.CountryName <> 'Switzerland'
 ORDER BY 
 	--c.CustomerName DESC,ctry.CountryName ASC,Stk.Cost DESC, So.TotalSalePrice, So.SaleDate DESC,MK.ManufacturerVehicleMakeName,
 		Mo.ManufacturerVehicleModelName
