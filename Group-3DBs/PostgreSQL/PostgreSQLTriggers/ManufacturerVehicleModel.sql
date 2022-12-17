@@ -10,7 +10,7 @@ CREATE OR REPLACE FUNCTION log_ManufacturerVehicleModel_update() RETURNS TRIGGER
         NEW."SysEndTime" = to_timestamp('9999-12-31 23:59:59', 'YYYY-MM-DD HH24:MI:SS');
 
         INSERT INTO "Audit"."ManufacturerVehicleModelHistory" ("TriggerOption", "Notes", "IsDeleted", "ManufacturerVehicleModelID", "ManufacturerModelName", "ManufacturerModelVariant", "SysEndTime", "SysStartTime", "UserAuthorizationId", "TransactionNumber") 
-        VALUES ('U', 'Row was updated', FALSE, "OLD.ManufacturerVehicleModelID", "OLD.ManufacturerModelName", "OLD.ManufacturerModelVariant", "OLD.SysEndTime", "OLD.SysStartTime", "OLD.UserAuthorizationId", "OLD.TransactionNumber"); 
+        VALUES ('U', 'Row was updated', FALSE, OLD."ManufacturerVehicleModelID", OLD."ManufacturerModelName", OLD."ManufacturerModelVariant", OLD."SysEndTime", OLD."SysStartTime", "OLD.UserAuthorizationId", "OLD.TransactionNumber"); 
         RETURN NEW;
     END;
 $$ LANGUAGE plpgsql;
@@ -34,7 +34,7 @@ CREATE OR REPLACE FUNCTION log_ManufacturerVehicleModel_delete() RETURNS TRIGGER
 
         OLD.SysEndTime = to_timestamp(NOW()::text, 'YYYY-MM-DD HH24:MI:SS');
         INSERT INTO "Audit"."ManufacturerVehicleModelHistory" ("TriggerOption", "Notes", "IsDeleted", "ManufacturerVehicleModelID", "ManufacturerModelName", "ManufacturerModelVariant", "SysEndTime", "SysStartTime", "UserAuthorizationId", "TransactionNumber") 
-        VALUES ('D', 'Row was deleted', TRUE, "OLD.ManufacturerVehicleModelID", "OLD.ManufacturerModelName", "OLD.ManufacturerModelVariant", "OLD.SysEndTime", "OLD.SysStartTime", "OLD.UserAuthorizationId", "OLD.TransactionNumber"); 
+        VALUES ('D', 'Row was deleted', TRUE, OLD."ManufacturerVehicleModelID", OLD."ManufacturerModelName", OLD."ManufacturerModelVariant", OLD."SysEndTime", OLD."SysStartTime", OLD."UserAuthorizationId", OLD."TransactionNumber"); 
         RETURN OLD;
     END;
 $$ LANGUAGE plpgsql;

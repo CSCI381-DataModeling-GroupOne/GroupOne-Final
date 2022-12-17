@@ -11,7 +11,7 @@ CREATE OR REPLACE FUNCTION log_Staff_update() RETURNS TRIGGER AS $$
         NEW."SysEndTime" = to_timestamp('9999-12-31 23:59:59', 'YYYY-MM-DD HH24:MI:SS');
     
         INSERT INTO "Audit"."StaffHistory" ("TriggerOption", "Notes", "IsDeleted", "StaffID", "StaffName", "StaffEmail", "Salary", "DepartmentID", "ManagerID", "SysEndTime", "SysStartTime", "UserAuthorizationId", "TransactionNumber")
-        VALUES ('U', 'Row was updated', FALSE, "OLD.StaffID", "OLD.StaffName", "OLD.StaffEmail", "OLD.Salary", "OLD.DepartmentID", "OLD.ManagerID", "OLD.SysEndTime", "OLD.SysStartTime", "OLD.UserAuthorizationId", "OLD.TransactionNumber");
+        VALUES ('U', 'Row was updated', FALSE, OLD."StaffID", OLD."StaffName", OLD."StaffEmail", OLD."Salary", OLD."DepartmentID", OLD."ManagerID", OLD."SysEndTime", OLD."SysStartTime", OLD."UserAuthorizationId", OLD."TransactionNumber");
         RETURN NEW;
     END;
 $$ LANGUAGE plpgsql;
@@ -24,7 +24,7 @@ CREATE TRIGGER uTu_Staff
     EXECUTE FUNCTION log_Staff_update();
     
 
-CREATE OR REPLACE FUNCTION log_Staff_update() RETURNS TRIGGER AS $$
+CREATE OR REPLACE FUNCTION log_Staff_delete() RETURNS TRIGGER AS $$
     BEGIN
         --
         -- Perform the required operation on emp, and create a row in emp_audit
@@ -35,7 +35,7 @@ CREATE OR REPLACE FUNCTION log_Staff_update() RETURNS TRIGGER AS $$
 
         OLD."SysEndTime" = to_timestamp(NOW()::text, 'YYYY-MM-DD HH24:MI:SS');
         INSERT INTO "Audit"."StaffHistory" ("TriggerOption", "Notes", "IsDeleted", "StaffID", "StaffName", "StaffEmail", "Salary", "DepartmentID", "ManagerID", "SysEndTime", "SysStartTime", "UserAuthorizationId", "TransactionNumber")
-        VALUES ('D', 'Row was deleted', TRUE, "OLD.StaffID", "OLD.StaffName", "OLD.StaffEmail", "OLD.Salary", "OLD.DepartmentID", "OLD.ManagerID", "OLD.SysEndTime", "OLD.SysStartTime", "OLD.UserAuthorizationId", "OLD.TransactionNumber");
+        VALUES ('D', 'Row was deleted', TRUE, OLD."StaffID", OLD."StaffName", OLD."StaffEmail", OLD."Salary", OLD."DepartmentID", OLD."ManagerID", OLD."SysEndTime", OLD."SysStartTime", OLD."UserAuthorizationId", OLD."TransactionNumber");
         RETURN OLD;
     END;
 $$ LANGUAGE plpgsql;

@@ -10,7 +10,7 @@ CREATE OR REPLACE FUNCTION log_SalesOrderVehicle_update() RETURNS TRIGGER AS $$
         NEW."SysEndTime" = to_timestamp('9999-12-31 23:59:59', 'YYYY-MM-DD HH24:MI:SS');
 
         INSERT INTO "Audit"."SalesOrderVehicleHistory" ("TriggerOption", "Notes", "IsDeleted", "SalesOrderVehicleID", "InvoiceNumber", "SaleDate", "CustomerID", "StaffID", "SysEndTime", "SysStartTime", "UserAuthorizationId", "TransactionNumber")
-        VALUES ('U', 'Row was updated', FALSE, "OLD.SalesOrderVehicleID", "OLD.InvoiceNumber", "OLD.SaleDate", "OLD.CustomerID", "OLD.StaffID", "OLD.SysEndTime", "OLD.SysStartTime", "OLD.UserAuthorizationId", "OLD.TransactionNumber");
+        VALUES ('U', 'Row was updated', FALSE, OLD."SalesOrderVehicleID", OLD."InvoiceNumber", OLD."SaleDate", OLD."CustomerID", OLD."StaffID", OLD."SysEndTime", OLD."SysStartTime", OLD."UserAuthorizationId", OLD."TransactionNumber");
         RETURN NEW;
     END;
 $$ LANGUAGE plpgsql;
@@ -32,9 +32,9 @@ CREATE OR REPLACE FUNCTION log_SalesOrderVehicle_delete() RETURNS TRIGGER AS $$
         DELETE FROM "Sales"."SalesOrderVehicleDetail" WHERE NEW."SalesOrderVehicleID" = OLD."SalesOrderVehicleID";
         IF NOT FOUND THEN RETURN NULL; END IF;
 
-        OLD.SysEndTime = to_timestamp(NOW()::text, 'YYYY-MM-DD HH24:MI:SS');
+        OLD."SysEndTime" = to_timestamp(NOW()::text, 'YYYY-MM-DD HH24:MI:SS');
         INSERT INTO "Audit"."SalesOrderVehicleHistory" ("TriggerOption", "Notes", "IsDeleted", "SalesOrderVehicleID", "InvoiceNumber", "SaleDate", "CustomerID", "StaffID", "SysEndTime", "SysStartTime", "UserAuthorizationId", "TransactionNumber")
-        VALUES ('D', 'Row was deleted', TRUE, "OLD.SalesOrderVehicleID", "OLD.InvoiceNumber", "OLD.SaleDate", "OLD.CustomerID", "OLD.StaffID", "OLD.SysEndTime", "OLD.SysStartTime", "OLD.UserAuthorizationId", "OLD.TransactionNumber");
+        VALUES ('D', 'Row was deleted', TRUE, OLD."SalesOrderVehicleID", OLD."InvoiceNumber", OLD."SaleDate", OLD."CustomerID", OLD."StaffID", OLD."SysEndTime", OLD."SysStartTime", OLD."UserAuthorizationId", OLD."TransactionNumber");
         RETURN OLD;
     END;
 $$ LANGUAGE plpgsql;
