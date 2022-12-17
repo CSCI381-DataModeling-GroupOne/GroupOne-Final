@@ -11,31 +11,31 @@ GO
 -- 1 Sales2018
 CREATE VIEW [dbo].[uvw_Sales2018]
 AS
-SELECT           DISTINCT  YEAR(SaleDate) AS SalesYear,
+SELECT           DISTINCT  YEAR(SO.SaleDate) AS SalesYear,
                            MK.ManufacturerVehicleMakeName AS MakeName,
-                           Inventory.ManufacturerVehicleModel.ManufacturerVehicleModelName AS ModelName,
-                           Sales.Customer.CustomerName AS CustomerName,
-                           Sales.Country.CountryName AS CountryName,
-                           Inventory.ManufacturerVehicleStock.Cost,
-                           Inventory.ManufacturerVehicleStock.RepairsCharge,
-                           Inventory.ManufacturerVehicleStock.PartsCharge,
-                           Inventory.ManufacturerVehicleStock.DeliveryCharge,
+                           MO.ManufacturerVehicleModelName AS ModelName,
+                           C.CustomerName AS CustomerName,
+                           Ctry.CountryName AS CountryName,
+                           STK.Cost,
+                           STK.RepairsCharge,
+                           STK.PartsCharge,
+                           STK.DeliveryCharge,
                            SOD.SalePrice,
-                           Sales.SalesOrderVehicle.SaleDate
+                           SO.SaleDate
   FROM           Inventory.ManufacturerVehicleMake AS MK
- INNER JOIN      Inventory.ManufacturerVehicleModel
-    ON MK.ManufacturerVehicleMakeID   = Inventory.ManufacturerVehicleModel.ManufacturerVehicleMakeID
- INNER JOIN      Sales.Country
- INNER           JOIN      Sales.Customer
-    ON Sales.Country.CountryID = Sales.Customer.CountryID
+ INNER JOIN      Inventory.ManufacturerVehicleModel AS MO
+    ON MK.ManufacturerVehicleMakeID  = MO.ManufacturerVehicleMakeID
+ INNER JOIN      Sales.Country AS Ctry
+ INNER           JOIN      Sales.Customer AS C
+    ON Ctry.CountryID = C.CountryID
  INNER           JOIN      Sales.SalesOrderVehicleDetail AS SOD
  INNER           JOIN Inventory.ManufacturerVehicleStock AS STK
-    ON SOD.ManufacturerVehicleStockID = Inventory.ManufacturerVehicleStock.ManufacturerVehicleStockID
+    ON SOD.ManufacturerVehicleStockID = STK.ManufacturerVehicleStockID
  INNER           JOIN Sales.SalesOrderVehicle AS SO
-    ON SOD.SalesOrderVehicleID = Sales.SalesOrderVehicle.SalesOrderVehicleID
-    ON Sales.Customer.CustomerID = Sales.SalesOrderVehicle.CustomerID
-    ON Inventory.ManufacturerVehicleModel.ManufacturerVehicleModelID = Inventory.ManufacturerVehicleStock.ManufacturerVehicleModelID
- WHERE           YEAR(SaleDate) = 2018
+    ON SOD.SalesOrderVehicleID = SO.SalesOrderVehicleID
+    ON C.CustomerID = SO.CustomerID
+    ON MO.ManufacturerVehicleModelID = STK.ManufacturerVehicleModelID
+ WHERE           YEAR(SO.SaleDate) = 2018
    AND           CountryName              <> 'Switzerland';
 GO
 -- 2 Yearly sales
@@ -52,31 +52,31 @@ GO
 
 CREATE VIEW [dbo].[YearlySales]
 AS
-SELECT      DISTINCT YEAR(SaleDate) AS SalesYear,
+SELECT      DISTINCT YEAR(SO.SaleDate) AS SalesYear,
                      MK.ManufacturerVehicleMakeName AS MakeName,
-                     Inventory.ManufacturerVehicleModel.ManufacturerVehicleModelName AS ModelName,
-                     Sales.Customer.CustomerName AS CustomerName,
-                     Sales.Country.CountryName AS CountryName,
-                     Inventory.ManufacturerVehicleStock.Cost,
-                     Inventory.ManufacturerVehicleStock.RepairsCharge,
-                     Inventory.ManufacturerVehicleStock.PartsCharge,
-                     Inventory.ManufacturerVehicleStock.DeliveryCharge,
+                     MO.ManufacturerVehicleModelName AS ModelName,
+                     C.CustomerName AS CustomerName,
+                     Ctry.CountryName AS CountryName,
+                     STK.Cost,
+                     STK.RepairsCharge,
+                     STK.PartsCharge,
+                     STK.DeliveryCharge,
                      SOD.SalePrice,
-                     Sales.SalesOrderVehicle.SaleDate
-  FROM      Sales.Country
+                     SO.SaleDate
+  FROM      Sales.Country AS Ctry
  INNER JOIN Sales.Customer AS C
-    ON Sales.Country.CountryID                                       = Sales.Customer.CountryID
+    ON Ctry.CountryID                 = C.CountryID
  INNER JOIN Inventory.ManufacturerVehicleMake AS MK
-    ON Sales.Country.CountryID                                       = MK.CountryID
+    ON Ctry.CountryID                 = MK.CountryID
  INNER JOIN Inventory.ManufacturerVehicleModel AS MO
-    ON MK.ManufacturerVehicleMakeID   = Inventory.ManufacturerVehicleModel.ManufacturerVehicleMakeID
+    ON MK.ManufacturerVehicleMakeID   = MO.ManufacturerVehicleMakeID
  INNER JOIN Inventory.ManufacturerVehicleStock AS STK
-    ON Inventory.ManufacturerVehicleModel.ManufacturerVehicleModelID = Inventory.ManufacturerVehicleStock.ManufacturerVehicleModelID
+    ON MO.ManufacturerVehicleModelID  = STK.ManufacturerVehicleModelID
  INNER JOIN Sales.SalesOrderVehicleDetail AS SOD
-    ON Inventory.ManufacturerVehicleStock.ManufacturerVehicleStockID = SOD.ManufacturerVehicleStockID
+    ON STK.ManufacturerVehicleStockID = SOD.ManufacturerVehicleStockID
  INNER JOIN Sales.SalesOrderVehicle AS SO
-    ON Sales.Customer.CustomerID                                     = Sales.SalesOrderVehicle.CustomerID
-   AND SOD.SalesOrderVehicleID             = Sales.SalesOrderVehicle.SalesOrderVehicleID;
+    ON C.CustomerID                   = SO.CustomerID
+   AND SOD.SalesOrderVehicleID        = SO.SalesOrderVehicleID;
 GO
 -- 3 Stock prices
 
@@ -127,45 +127,44 @@ SELECT VehicleColor,
                ON MVS.ManufacturerVehicleStockID = SOD.ManufacturerVehicleStockID
             INNER JOIN Sales.SalesOrderVehicle AS SO
                ON SO.SalesOrderVehicleID         = SOD.SalesOrderVehicleID) STK
-  PIVOT (   SUM(STK.SalePrice)
+  PIVOT (   SUM(SalePrice)
             FOR SaleYear IN ([2015], [2016], [2017], [2018])) pvt;
 GO
 
 
 
---okay so sales by country and sales by text is what i didnt have time to work on
---i meant match the output and fixing
+
 CREATE VIEW [dbo].[uwv_SalesByCountry]
 AS
-SELECT      ManufacturerVehicleStockID,
-            ManufacturerVehicleMakeName AS MakeName,
-            ManufacturerVehicleModelName AS ModelName,
-            Cust.CustomerName AS CustomerName,
-            CountryName AS CountryName,
-            Cost,
-            RepairsCharge,
-            PartsCharge,
-            DeliveryCharge,
-            VehicleColor,
-            SalePrice,
-            LineItemDiscount,
-            InvoiceNumber,
-            SaleDate,
-            SalesOrderVehicleDetailID
+SELECT      stk.ManufacturerVehicleStockID,
+            MK.ManufacturerVehicleMakeName AS MakeName,
+            MO.ManufacturerVehicleModelName AS ModelName,
+            C.CustomerName AS CustomerName,
+            Ctry.CountryName AS CountryName,
+            stk.Cost,
+            stk.RepairsCharge,
+            stk.PartsCharge,
+            stk.DeliveryCharge,
+            stk.VehicleColor,
+            SOD.SalePrice,
+            SOD.LineItemDiscount,
+            SO.InvoiceNumber,
+            SO.SaleDate,
+            SOD.SalesOrderVehicleDetailID
   FROM      Sales.Country AS Ctry
  INNER JOIN Inventory.ManufacturerVehicleMake AS MK
-    ON Ctry.CountryID                                       = MK.CountryID
+    ON Ctry.CountryID                 = MK.CountryID
  INNER JOIN Inventory.ManufacturerVehicleModel AS MO
-    ON MK.ManufacturerVehicleMakeID   = Inventory.ManufacturerVehicleModel.ManufacturerVehicleMakeID
- INNER JOIN Inventory.ManufacturerVehicleStock
-    ON Inventory.ManufacturerVehicleModel.ManufacturerVehicleModelID = Inventory.ManufacturerVehicleStock.ManufacturerVehicleModelID
+    ON MK.ManufacturerVehicleMakeID   = MO.ManufacturerVehicleMakeID
+ INNER JOIN Inventory.ManufacturerVehicleStock AS stk
+    ON MO.ManufacturerVehicleModelID  = stk.ManufacturerVehicleModelID
  INNER JOIN Sales.SalesOrderVehicleDetail AS SOD
-    ON Inventory.ManufacturerVehicleStock.ManufacturerVehicleStockID = SOD.ManufacturerVehicleStockID
- INNER JOIN Sales.Customer AS C 
-    ON Sales.Country.CountryID                                       = Sales.Customer.CountryID
- INNER JOIN Sales.SalesOrderVehicle
-    ON SOD.SalesOrderVehicleID             = Sales.SalesOrderVehicle.SalesOrderVehicleID
-   AND Sales.Customer.CustomerID                                     = Sales.SalesOrderVehicle.CustomerID;
+    ON stk.ManufacturerVehicleStockID = SOD.ManufacturerVehicleStockID
+ INNER JOIN Sales.Customer AS C
+    ON Ctry.CountryID                 = C.CountryID
+ INNER JOIN Sales.SalesOrderVehicle AS SO
+    ON SOD.SalesOrderVehicleID        = SO.SalesOrderVehicleID
+   AND C.CustomerID                   = SO.CustomerID;
 GO
 USE [GroupOne-EuropeanCarManufacturer];
 GO
@@ -186,18 +185,18 @@ GO
 
 CREATE VIEW [dbo].[uvw_SalesText]
 AS
-SELECT      Sales.Country.CountryName,
-            Inventory.ManufacturerVehicleStock.Cost,
+SELECT      Ctry.CountryName,
+            STK.Cost,
             SOD.SalePrice,
             MK.ManufacturerVehicleMakeName
-  FROM      Sales.SalesOrderVehicleDetail as SOD
+  FROM      Sales.SalesOrderVehicleDetail AS SOD
  INNER JOIN Inventory.ManufacturerVehicleStock AS STK
-    ON SOD.ManufacturerVehicleStockID = Inventory.ManufacturerVehicleStock.ManufacturerVehicleStockID
-   AND SOD.ManufacturerVehicleStockID = Inventory.ManufacturerVehicleStock.ManufacturerVehicleStockID
-   AND SO.ManufacturerVehicleStockID = Inventory.ManufacturerVehicleStock.ManufacturerVehicleStockID
+    ON SOD.ManufacturerVehicleStockID = STK.ManufacturerVehicleStockID
+   AND SOD.ManufacturerVehicleStockID = STK.ManufacturerVehicleStockID
+   AND SOD.ManufacturerVehicleStockID = STK.ManufacturerVehicleStockID
  CROSS JOIN Sales.Country AS Ctry
  INNER JOIN Inventory.ManufacturerVehicleMake AS MK
-    ON Sales.Country.CountryID = MK.CountryID;
+    ON Ctry.CountryID = MK.CountryID;
 GO
 
 
