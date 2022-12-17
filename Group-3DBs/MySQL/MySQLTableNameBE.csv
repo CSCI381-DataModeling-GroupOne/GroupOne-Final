@@ -1,0 +1,23 @@
+ERwin Property Ids,1075850516::User Formatted Name  [read only],0::Object Type  [read only],1073742126::Name,1075849176::Physical Name,1075849176::Physical Name
+1075838979::216,Country,Table,Sales.Country,Sales.Country,Sales.Country
+1075838979::1939,Country History,Table,Audit.CountryHistory,Audit.CountryHistory,Audit.CountryHistory
+1075838979::219,Customer,Table,Sales.Customer,Sales.Customer,Sales.Customer
+1075838979::234,Customer Expenditure Classification,Table,Analytics.CustomerExpenditureClassification,Analytics.CustomerExpenditureClassification,Analytics.CustomerExpenditureClassification
+1075838979::1834,CustomerHistory,Table,Audit.CustomerHistory,Audit.CustomerHistory,Audit.CustomerHistory
+1075838979::1015,Department,Table,HumanResources.Department,HumanResources.Department,HumanResources.Department
+1075838979::1929,Department History,Table,Audit.DepartmentHistory,Audit.DepartmentHistory,Audit.DepartmentHistory
+1075838979::1421,Manufacturer Marketing Category,Table,Analytics.ManufacturerMarketingCategory,Analytics.ManufacturerMarketingCategory,Analytics.ManufacturerMarketingCategory
+1075838979::225,Manufacturer Vehicle Make,Table,Inventory.ManufacturerVehicleMake,Inventory.ManufacturerVehicleMake,Inventory.ManufacturerVehicleMake
+1075838979::1935,Manufacturer Vehicle Make History,Table,Audit.ManufacturerVehicleMakeHistory,Audit.ManufacturerVehicleMakeHistory,Audit.ManufacturerVehicleMakeHistory
+1075838979::222,Manufacturer Vehicle Model,Table,Inventory.ManufacturerVehicleModel,Inventory.ManufacturerVehicleModel,Inventory.ManufacturerVehicleModel
+1075838979::1931,Manufacturer Vehicle Model History,Table,Audit.ManufacturerVehicleModelHistory,Audit.ManufacturerVehicleModelHistory,Audit.ManufacturerVehicleModelHistory
+1075838979::228,Manufacturer Vehicle Stock,Table,Inventory.ManufacturerVehicleStock,Inventory.ManufacturerVehicleStock,Inventory.ManufacturerVehicleStock
+1075838979::1937,Manufacturer Vehicle Stock History,Table,Audit.ManufacturerVehicleStockHistory,Audit.ManufacturerVehicleStockHistory,Audit.ManufacturerVehicleStockHistory
+1075838979::237,Sales Category Threshold,Table,Analytics.SalesCategoryThreshold,Analytics.SalesCategoryThreshold,Analytics.SalesCategoryThreshold
+1075838979::240,Sales Order Vehicle,Table,Sales.SalesOrderVehicle,Sales.SalesOrderVehicle,Sales.SalesOrderVehicle
+1075838979::243,Sales Order Vehicle Detail,Table,Sales.SalesOrderVehicleDetail,Sales.SalesOrderVehicleDetail,Sales.SalesOrderVehicleDetail
+1075838979::1943,Sales Order Vehicle Detail History,Table,Audit.SalesOrderVehicleDetailHistory,Audit.SalesOrderVehicleDetailHistory,Audit.SalesOrderVehicleDetailHistory
+1075838979::1941,Sales Order Vehicle History,Table,Audit.SalesOrderVehicleHistory,Audit.SalesOrderVehicleHistory,Audit.SalesOrderVehicleHistory
+1075838979::246,Staff,Table,HumanResources.Staff,HumanResources.Staff,HumanResources.Staff
+1075838979::1649,Staff History,Table,Audit.StaffHistory,Audit.StaffHistory,Audit.StaffHistory
+1075838979::1669,UserAuthorization,Table,DbSecurity.UserAuthorization,DbSecurity.UserAuthorization,DbSecurity.UserAuthorization
