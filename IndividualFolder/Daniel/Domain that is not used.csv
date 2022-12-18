@@ -1,0 +1,20 @@
+"Domain Name","Domain Physical_Name","Domain Logical_Data_Type","Domain Physical_Data_Type"
+dNumber,dNumber,INTEGER,integer
+dDatetime,dDatetime,datetime,datetime
+dString,dString,NVARCHAR(50),nvarchar(20)
+sdVehicleSalesCost,sdVehicleSalePayment,MONEY,"numeric(18,2)"
+sdDate,sdDate,date,date
+sdLongTextString,sdLongTextString,NVARCHAR(50),nvarchar(200)
+sdFlagString,sdFlagString,CHAR(1),nvarchar(20)
+sdShortTextString,sdShortTextString,NVARCHAR(50),nvarchar(50)
+sdVehicleString,sdVehicleString,NVARCHAR(50),nvarchar(50)
+sdSysTime,sdSysTime,datetime,Datetime2(7)
+sdFlagBit,sdFlagBit,BOOLEAN,bit
+sdAddressesString,sdAddressesString,NVARCHAR(50),nvarchar(20)
+sdCountryStringVariants,sdCountryStringVariants,NVARCHAR(50),nvarchar(20)
+sdBusinessComponentsString,sdBusinessComponentsString,NVARCHAR(50),nvarchar(50)
+sdOrdinalNumber,sdOrdinalNumber,SMALLINT,smallint
+sdPersonNameString,sdPersonNameString,NVARCHAR(50),nvarchar(50)
+sdTimeString,sdTimeString,NVARCHAR(50),nvarchar(20)
+sdProjectString,sdProjectString,NVARCHAR(50),nvarchar(50)
+sdCustomerString,sdCustomerString,NVARCHAR(50),nvarchar(20)

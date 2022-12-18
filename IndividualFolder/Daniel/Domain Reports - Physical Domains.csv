@@ -1,0 +1,65 @@
+"Domain Physical_Name","Comment","Null Option","Physical Data Type"
+_default_,,Null,char(18)
+String,,Null,varchar(20)
+Number,,Null,integer
+Datetime,,Null,datetime
+Blob,,Null,varbinary
+dEuropeanCarManufacturer,,Null,char(18)
+dNumber,Domain for numerical data types.,Null,integer
+dDatetime,Domain for character data types.,Null,datetime
+dString,,Null,nvarchar(20)
+sdSequenceNumber,Numerical object to categorize vehicles based on their sale price.,Not Null,integer
+SurrogateKeyNumber,"
+",Not Null,integer
+sdVehicleSalePayment,Subdomain for objects relating to vehicle price.,Not Null,"numeric(18,2)"
+VehiclePrice,,Not Null,"numeric(18,2)"
+DiscountedPrice,,Not Null,"numeric(18,2)"
+CostOfFee,,Not Null,"numeric(18,2)"
+sdDate,,Null,date
+SaleDate,,Null,date
+PurchaseDate,The date the Vehicle is/was purchased.,Null,date
+sdLongTextString,Subdomain for character data types containing large amounts of text.,Null,nvarchar(200)
+sdFlagString,Subdomain for character data types that represent a boolean character.,Null,nvarchar(20)
+Note,Object that is used to supply reason for auditting a row within a table of the database.,Null,nvarchar(200)
+sdShortTextString,Subdomain for character data types containing small amounts of text.,Null,nvarchar(50)
+StockCode,Object that is made up of a combination of numerical and character values and is used to identify A Vehicle in Stock. (unique to each vehicle),Null,nvarchar(50)
+InvoiceNumber,Object that is made up of a combination of numerical and character values and is used to uniquely identify a vehicle upon sale.,Null,nchar(8)
+sdVehicleString,Subdomain for objects that describe the characteristics of a Vehicle.,Null,nvarchar(50)
+VehicleIdentifier,Character object that is used to represent the make and model of a vehicle,Null,nvarchar(150)
+VehicleColor,Object representative of the color of a Vehicle,Null,nvarchar(50)
+sdSysTime,Date and time object used for database auditting purposes.,Not Null,Datetime2(7)
+SysStartTime,Date and time object used for database auditting purposes.,Not Null,Datetime2(7)
+SysEndTime,Date and time object used for database auditting purposes.,Not Null,Datetime2(7)
+AuditFlag,Character object representative of a boolean flag used only for database auditting purposes.,Null,nvarchar(20)
+sdFlagBit,Subdomain for integer values representative of a boolean flag.,Null,bit
+FlagFalse,Integer flag value which is used to indicate or describe a piece of information to be false.,Null,bit
+sdAddressesString,The subdomain for string data types relating to a persons address.,Null,nvarchar(20)
+AddressString,Represents the house number and street value/name portion of a persons address.,Null,nvarchar(150)
+PostalCodeString,Represents the postal code value portion of an address.,Null,nvarchar(20)
+TownString,Represents the city/town portion of an address.,Null,nvarchar(20)
+sdCountryStringVariants,Subdomain for the variation of country descriptors.,Null,nvarchar(20)
+CountryISO2,Two character object which can only be comprised of letter values and supplies a country code to represent the name of a country.,Null,nchar(2)
+CountryISO3,Three character object which can only be comprised of letter values and supplies a country code to represent the name of a country.,Null,nchar(3)
+CountryString,Character object representing the name of a country.,Null,nvarchar(50)
+RegionString,Character object rerpresenting the name of a Region.,Null,nvarchar(20)
+sdBusinessComponentsString,Subdomain for objects relating to objects that facilitate the business.,Null,nvarchar(50)
+DepartmentString,Character object which is used to describe the names of departments within the European Car Manufacturer Business.,Null,nvarchar(50)
+sdOrdinalNumber,Subdomain for integer objects used in the database to specify a position for their respective row.,Not Null,smallint
+CustomerComments,Large text object used to describe comments or reviews by customers about a particular vehicle,Null,nvarchar(200)
+VehicleSalesThresholdCategory,Numerical object to categorize vehicles based on their sale price.,Null,nvarchar(50)
+DateAdded,Similar to SysStartTime object.,Null,Datetime2(7)
+sdPersonNameString,,Not Null,nvarchar(50)
+sdTimeString,Subdomain for string objects representing a time value,Null,nvarchar(20)
+ClassTimeString,"String object representing our class time, used for database auditting purposes.",Null,nvarchar(20)
+sdProjectString,Subdomain for character objects relating to the final project itself.,Null,nvarchar(50)
+GrouplProjectNameString,Character object representing the name of our project.,Null,nvarchar(50)
+DateOfLastUpdate,Similar to SysEndTime Object.,Not Null,Datetime2(7)
+FirstNameString,Character object representing the first name of a person.,Not Null,nvarchar(25)
+LastNameString,Character object representing the last name of a person.,Not Null,nvarchar(25)
+sdCustomerString,Subdomain representing character objects which are used to describe a Customer.,Null,nvarchar(20)
+FullNameString,Character object representing both first and last name of a person.,Not Null,nvarchar(50)
+VehicleManufacturerMarketingType,Character object that is used to categorize the Make of a Vehicle based on the types of cars that are offered in their line up.,Null,nvarchar(250)
+TransactionNumber,,Not Null,smallint
+LineItemNumber,,Not Null,smallint
+CustomerName,"Object that describes the name of a Customer, (name can either represent a person or business )",Null,nvarchar(50)
+CustomerSpendCapacity,"Integer object relating to the amount of money a Customer has spent, also used to categorize Customers based on how much they spend.",Null,nvarchar(25)
